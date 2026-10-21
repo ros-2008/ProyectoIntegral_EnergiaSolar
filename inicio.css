@@ -61,4 +61,19 @@
 }
 .div1{
     display: flex;
+    margin-top: 30px;
+}
+.div1-contenido {
+    margin-left: 70px;
+    align-items: center;
+    h2 {
+        color: #0B1F3A;
+    }
+    h4 {
+        color: #FFC928;
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
 }
