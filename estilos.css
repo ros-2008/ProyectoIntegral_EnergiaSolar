@@ -15,7 +15,7 @@
 .caja_principal1 {
     width: 50%;
 }
-
+ 
 .caja_principal2 {
     width: 50%;
 }
@@ -36,7 +36,7 @@ body {
 
 .Caja2 {
     width: 350px;
-    background-color: #ffffff;
+    background-color: #041b3e;
     box-shadow: 2px 2px 2px 2px #000000;
     border-radius: 10px;
     padding: 20px;
