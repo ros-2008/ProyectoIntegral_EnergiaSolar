@@ -14,15 +14,25 @@
     background-color: #ffc928;
 }
 .contenido {
-  height: 500px;
-  background-image: url("img/panel-fondo.png");
-  padding: 60px;
+    min-height: 500px;
+    background-image: url("img/panel-fondo.png.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px;
+    box-sizing: border-box;
 }
+
 .contenido h1{
-    color: white;
+    color: #FFC928;
+    font-size: 20px;
 }
 .contenido h2{
-    
+    font-size: 50px;
+    color: white;
+}
+.contenido h2 strong{
+    color: #FFC928;
 }
 .boton {
   background-color: #FFC928;
@@ -34,4 +44,14 @@
 }
 .boton:hover {
   background-color: white;
+}
+.content{
+    color: white;
+    font-size: 20px;
+}
+.contenedor{
+    background-color: #F4F5F7;
+}
+.centrar{
+    display: flex;
 }
