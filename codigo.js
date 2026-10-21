@@ -19,6 +19,7 @@ function Inicio1() {
     for (let i = 0; i < arrayDeUsuario.length; i++) {
         if (usuario == arrayDeUsuario[i] && password == arraydeContra[i]) {
             alert("Bienvenido " + usuario)
+            window.location = "inicio.html";
         } else if (usuario != arrayDeUsuario[i] && password == arraydeContra[i]) {
             alert("Usuario Incorrecto")
         } else if (usuario == arrayDeUsuario[i] && password != arraydeContra[i]) {
