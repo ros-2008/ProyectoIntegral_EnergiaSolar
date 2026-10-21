@@ -13,3 +13,25 @@
     color: #0b1f3a;
     background-color: #ffc928;
 }
+.contenido {
+  height: 500px;
+  background-image: url("img/panel-fondo.png");
+  padding: 60px;
+}
+.contenido h1{
+    color: white;
+}
+.contenido h2{
+    
+}
+.boton {
+  background-color: #FFC928;
+  color: #0B1F3A;
+  padding: 15px 25px;
+  margin-top: 15px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.boton:hover {
+  background-color: white;
+}
