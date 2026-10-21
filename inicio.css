@@ -55,3 +55,7 @@
 .centrar{
     display: flex;
 }
+.centrar div {
+    padding: 20px;
+    margin-left: 55px;
+}
