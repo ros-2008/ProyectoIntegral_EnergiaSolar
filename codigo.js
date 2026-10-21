@@ -1,5 +1,8 @@
 var arrayDeUsuario = [];
 var arraydeContra = [];
+var variableregistro = 0;
+
+
 
 function Inicio() {
     let usuario = document.getElementById("usuario").value;
@@ -10,6 +13,7 @@ function Inicio() {
         alert("No pueden haber casillas vacias")
     } else {
         alert("Registrado")
+        variableregistro = 1;
     }
 }
 
@@ -33,7 +37,12 @@ function Inicio1() {
 }
 
 function mostrar(id) {
-    document.getElementById("div1").className = "oculto";
+    if (variableregistro == 0) {
+        
+    }else if (variableregistro == 1) {
+            document.getElementById("div1").className = "oculto";
     document.getElementById("div2").className = "oculto";
     document.getElementById(id).className = "visible";
+    }
+
 }
