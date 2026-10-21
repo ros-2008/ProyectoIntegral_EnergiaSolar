@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.oculto {
+    visibility: hidden;
+}
+.caja_principal {
+    display: flex;
+    gap: 20px;
+    margin: 17%;
+    margin-top: 130px;
+}
+
+.caja_principal1 {
+    width: 50%;
+}
+
+.caja_principal2 {
+    width: 50%;
+}
+
+.caja_1 {
+    text-align: center;
+    margin-right: 10%;
+
+}
+
+body {
+    display: flex;
+    background: linear-gradient(to right, #003f88, #FFFFFF);
+    height: 100%;
+}
+
+
+
+.Caja2 {
+    width: 350px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px 2px #000000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.Caja2_div1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.Caja{
+    text-align: center;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.Caja2_div2 {
+    text-align: center;
+    background-color: #000000;
+    padding: 10px;
+    color: #e0cb0d;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.Caja2_div3 {
+    background-color: #000000;
+    color: #e0cb0d;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.Caja2_div3 .campo {
+    margin-bottom: 10px;
+}
+
+Caja2_div3 label {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.Caja2_div3 input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.Caja2_div4 {
+    color: #e0cb0d;
+    text-align: center;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Caja2_div4 a{
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.Caja2_div4 button {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+}
