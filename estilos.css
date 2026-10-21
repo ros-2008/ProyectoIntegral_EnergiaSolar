@@ -116,3 +116,12 @@ Caja2_div3 label {
     width: 100%;
     border-radius: 5px;
 }
+
+@media(max-width: 430px){
+    .contenedor{
+        display: block;
+    }
+    img{
+        width: 100%;
+    }
+}
