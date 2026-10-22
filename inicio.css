@@ -1,7 +1,7 @@
-
 .nav {
     background-color: #0b1f3a !important;
 }
+
 .nav .nav-link {
     color: white;
     padding: 10px 16px;
@@ -13,6 +13,7 @@
     color: #0b1f3a;
     background-color: #ffc928;
 }
+
 .contenido {
     min-height: 500px;
     background-image: url("img/panel-fondo.png.jpg");
@@ -23,42 +24,120 @@
     box-sizing: border-box;
 }
 
-.contenido h1{
+.contenido h1 {
     color: #FFC928;
     font-size: 20px;
 }
-.contenido h2{
+
+.contenido h2 {
     font-size: 50px;
     color: white;
 }
-.contenido h2 strong{
+
+.contenido h2 strong {
     color: #FFC928;
 }
+
 .boton {
-  background-color: #FFC928;
-  color: #0B1F3A;
-  padding: 15px 25px;
-  margin-top: 15px;
-  border-radius: 30px;
-  font-weight: bold;
+    background-color: #FFC928;
+    color: #0B1F3A;
+    padding: 15px 25px;
+    margin-top: 15px;
+    border-radius: 30px;
+    font-weight: bold;
 }
+
 .boton:hover {
-  background-color: white;
+    background-color: white;
 }
-.content{
+
+.content {
     color: white;
     font-size: 20px;
 }
-.contenedor{
+
+.contenedor {
     background-color: #F4F5F7;
 }
-.centrar{
+
+.centrar {
     display: flex;
 }
+
 .centrar div {
     padding: 20px;
     margin-left: 55px;
 }
-.div1{
+
+.div1 {
+    display: flex;
+}
+
+.card1 {
+    display: flex;
+    background-color: #0B1F3A;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card1 h1 {
+    color: #FFC928;
+    text-align: center;
+}
+
+.card1 p {
+    color: White;
+}
+
+.card1-content {
+    border-right: 2px solid;
+    border-color: #29445A;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    align-self: center;
+    margin-right: 100px;
+}
+
+.centra {
+    display: flex;
+    padding: 20px;
+}
+
+.card1 {
+    height: 200px;
+}
+.text1-content {
+    display: flex;
+}
+.text1 h2{
+    color: #FFC928;
+}
+.text1 h1{
+    color: #0B1F3A;
+}
+.text2{
+    margin-left: 600px;
+    font-size: 20px;
+    color: #29445A;
+}
+.content-text{
+    padding: 60px;
+}
+.card1-cards{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 380px;
+    height: 300px;
+    img {
+        width: 90px;
+    }
+}
+.centrador{
+    padding: 10px;
+}
+.content-cards{
     display: flex;
 }
