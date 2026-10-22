@@ -119,12 +119,13 @@
     color: #0B1F3A;
 }
 .text2{
-    margin-left: 600px;
+    margin-left: 500px;
     font-size: 20px;
     color: #29445A;
 }
 .content-text{
     padding: 60px;
+    font-family: 'Montserrat', sans-serif;
 }
 .card1-cards{
     border: 2px solid;
@@ -134,10 +135,15 @@
     img {
         width: 90px;
     }
+    margin: 20px;
+    margin-right: 40px ;
 }
 .centrador{
     padding: 10px;
 }
 .content-cards{
     display: flex;
+}
+#img1{
+    width: 70px;
 }
