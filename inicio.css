@@ -17,15 +17,36 @@ body{
     background-color: #ffc928;
 }
 
+
 .contenido {
+    position: relative;
     min-height: 500px;
-    background-image: url("img/panel-fondo.png.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding: 60px;
     box-sizing: border-box;
+    overflow: hidden;
 }
+
+.carrusel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: -1;
+}
+
+.carrusel img.activo {
+    opacity: 1;
+}
+
+.contenido-content {
+    position: relative;
+    color: white;
+}
+
 
 .contenido h1 {
     color: #FFC928;
