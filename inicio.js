@@ -7,4 +7,4 @@ setInterval(() => {
     actual = (actual + 1) % imagenes.length;
 
     imagenes[actual].classList.add("activo");
-}, 5000);
+}, 7000);
