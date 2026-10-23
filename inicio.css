@@ -208,5 +208,10 @@ body{
     h2{
         color: #0b1f3a;
         font-weight: 800;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 30px;
+        font-weight: 530 !important;
     }
 }
