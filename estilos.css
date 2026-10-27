@@ -123,9 +123,42 @@ body {
     background: transparent;
     border: none;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
     width: 100%;
+    border-radius: 5px;
+}
+
+.Caja2_div5 {
+    text-align: right;
+    margin-top: 15px;
+    display: block;
+
+}
+
+.Caja2_div5 p {
+    font-size: 10px;
+    text-align: right;
+    display: block;
+    margin-right: 20px;
+    color: #e2d139;
+}
+
+.Caja2_div5 h4{
+    font-size: 18px;
+    text-align: right;
+    display: block;
+    color: #FFFFFF;
+}
+
+.Caja2_div5 button {
+    margin-right: 18px;
+    align-items: right;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 50%;
     border-radius: 5px;
 }
 
