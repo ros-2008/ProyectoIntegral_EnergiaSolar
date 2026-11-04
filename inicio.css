@@ -530,7 +530,7 @@ body {
         overflow-wrap: break-word;
     }
 
- 
+
     .centrar br,
     .div1-text br,
     .text1-content br,
@@ -686,15 +686,19 @@ body {
         margin: 20px;
         margin-right: 40px;
     }
-    .footer{
+
+    .footer {
         display: block;
-        img{
+
+        img {
             margin-left: 150px;
         }
     }
-    #logo-footer{
+
+    #logo-footer {
         margin-left: 120px !important;
     }
+
     .footer-text {
         padding: 30px;
         display: block;
