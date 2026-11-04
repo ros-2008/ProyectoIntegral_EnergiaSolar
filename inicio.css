@@ -5,9 +5,8 @@ body {
 }
 
 .nav {
-    background-color: #05316b !important;
+    background-color: #0B1F3A !important;
 }
-
 .nav .nav-link {
     color: white;
     padding: 10px 16px;
@@ -72,10 +71,12 @@ body {
     margin-top: 15px;
     border-radius: 30px;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .boton:hover {
     background-color: white;
+    transform: scale(1.05);
 }
 
 .content {
@@ -98,6 +99,21 @@ body {
 
 .div1 {
     display: flex;
+    margin-top: 30px;
+}
+.div1-contenido {
+    margin-left: 70px;
+    align-items: center;
+    h2 {
+        color: #0B1F3A;
+    }
+    h4 {
+        color: #FFC928;
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
 }
 
 .card1 {
@@ -175,6 +191,46 @@ body {
 
 .centrador {
     padding: 10px;
+}
+
+.content-cards {
+    display: flex;
+}
+
+.card1-cards {
+    border: 2px solid #d9dde3;
+    border-radius: 10px;
+    width: 380px;
+    height: auto;
+    min-height: 300px;
+    background-color: white;
+
+    img {
+        width: 90px;
+    }
+
+    margin: 20px;
+    margin-right: 40px;
+}
+
+.centrador {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+
+.centrador .boton {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.centrador br {
+    display: none;
+}
+
+.centrador h3 {
+    min-height: 56px;
 }
 
 .content-cards {
@@ -609,7 +665,7 @@ body {
     }
 }
 
-@media screen and (min-width: 393px) and (max-width: 852px) {
+@media screen and (max-width: 852px) {
 
     .centrar {
         display: block;
@@ -669,8 +725,31 @@ body {
     }
 
     .content-text {
-        padding: 0px;
+        padding: 30px 20px;
         font-family: 'Montserrat', sans-serif;
+    }
+
+    .text1-content {
+        display: block;
+    }
+
+    .text1 h1 {
+        font-size: 26px;
+    }
+
+    .text1 h2 {
+        font-size: 20px;
+    }
+
+    .text2 {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .text2 br {
+        display: none;
     }
 
     .card1-cards {
@@ -711,5 +790,33 @@ body {
             color: #dad7cd;
         }
     }
+    .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 8px 15px;
+    margin: 0;
+}
+
+.nav .nav-item:first-child {
+    margin-right: auto;
+}
+
+.nav .nav-item:first-child .nav-link {
+    padding: 0;
+}
+
+.nav .nav-item:first-child img {
+    height: 70px;
+    width: auto;
+}
+
+.nav .nav-link {
+    padding: 8px 10px;
+    font-size: 15px;
+    white-space: nowrap;
+}
 
 }
