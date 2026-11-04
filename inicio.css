@@ -38,7 +38,7 @@ a {
 
 .navbar {
     width: 100%;
-    min-height: 95px;
+    min-height: 90px;
     padding: 10px 6%;
     background-color: #0B1F3A;
     display: flex;
@@ -62,12 +62,12 @@ a {
 }
 
 .nav-links a {
-    color: white;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 600;
     padding: 12px 18px;
     border-radius: 6px;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover,
@@ -78,7 +78,7 @@ a {
 
 
 /* =========================
-   PORTADA / CARRUSEL
+   PORTADA PRINCIPAL
 ========================= */
 
 .contenido {
@@ -128,7 +128,7 @@ a {
     position: relative;
     z-index: 1;
     max-width: 650px;
-    color: white;
+    color: #ffffff;
 }
 
 .contenido-content h1 {
@@ -139,7 +139,7 @@ a {
 }
 
 .contenido-content h2 {
-    color: white;
+    color: #ffffff;
     font-size: clamp(35px, 5vw, 58px);
     line-height: 1.15;
     margin-bottom: 20px;
@@ -150,7 +150,7 @@ a {
 }
 
 .contenido-content .content {
-    color: white;
+    color: #ffffff;
     font-size: 18px;
     line-height: 1.7;
     max-width: 520px;
@@ -170,8 +170,8 @@ a {
     margin-top: 10px;
     border-radius: 30px;
     font-weight: bold;
-    transition: all 0.3s ease;
     border: 2px solid #FFC928;
+    transition: all 0.3s ease;
 }
 
 .boton:hover {
@@ -310,7 +310,7 @@ a {
 }
 
 .card1-content p {
-    color: white;
+    color: #ffffff;
     font-size: 16px;
 }
 
@@ -362,7 +362,7 @@ a {
 .card1-cards {
     border: 1px solid #D9DDE3;
     border-radius: 12px;
-    background-color: white;
+    background-color: #ffffff;
     padding: 25px;
     min-width: 0;
     display: flex;
@@ -412,14 +412,18 @@ a {
 
 
 /* =========================
-   COTIZACIÓN / LLAMADO A LA ACCIÓN
+   COTIZACIÓN
 ========================= */
 
 .contenido2 {
     background-color: #0B1F3A;
     background-image:
-        linear-gradient(rgba(11, 31, 58, 0.85), rgba(11, 31, 58, 0.85)),
+        linear-gradient(
+            rgba(11, 31, 58, 0.85),
+            rgba(11, 31, 58, 0.85)
+        ),
         url("img/icono.png");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -439,13 +443,13 @@ a {
 }
 
 .contenido2 h1 {
-    color: white;
+    color: #ffffff;
     font-size: clamp(28px, 4vw, 42px);
     margin-bottom: 20px;
 }
 
 .contenido2 p {
-    color: white;
+    color: #ffffff;
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
@@ -466,7 +470,7 @@ a {
     padding: 30px 6%;
 }
 
-.footer > img {
+.footer-logo img {
     width: 120px;
     height: auto;
 }
@@ -489,7 +493,7 @@ a {
     color: #FFC928;
 }
 
-.footer > a img {
+.footer > a img.instagram {
     width: 40px;
     height: 40px;
     object-fit: contain;
