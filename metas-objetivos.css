@@ -13,7 +13,8 @@
     color: #0b1f3a;
     background-color: #ffc928;
 }
-.Metas-objetivos{
+
+.Metas-objetivos {
     background-image: url(img/Amanecer\ entre\ montañas\ y\ paneles\ solares.png);
     min-height: 230px;
     background-size: cover;
@@ -21,132 +22,154 @@
     background-repeat: no-repeat;
 }
 
-.content{
+.content {
     border: 2px solid;
     border-color: #f4f5f7b4;
-    border-radius: 20px ;
+    border-radius: 20px;
     width: auto;
     display: flex;
     padding: 30px;
-    background-color:   #eff2f7 ;
+    background-color: #eff2f7;
 }
-.content-content{
-        color: #0B1F3A;
+
+.content-content {
+    color: #0B1F3A;
     font-size: 20px;
     font-weight: 500;
     padding: 25px;
     background-color: white;
     border: 2px solid;
     border-color: #f4f5f7b4;
-    border-radius: 20px ;
+    border-radius: 20px;
     width: fit-content;
     margin-top: 60px;
-    h2{
+
+    h2 {
         font-size: 20px;
         font-weight: bold;
     }
 }
-.content-ton{
+
+.content-ton {
     color: #0B1F3A;
     font-size: 20px;
     font-weight: 500;
     margin-left: 60px;
     margin-right: 0 !important;
-    width:fit-content;
+    width: fit-content;
 }
-#content-contentt{
+
+#content-contentt {
     margin-right: 13px;
 }
-.content-contentt{
-    p{
+
+.content-contentt {
+    p {
         font-size: 20px;
     }
-        color: #0B1F3A;
+
+    color: #0B1F3A;
     padding: 15px;
     background-color: #f4f5f7b4;
     border: 2px solid;
     border-color: #f4f5f7b4;
-    border-radius: 20px ;
+    border-radius: 20px;
     width: fit-content;
     margin-top: 0px;
     margin-right: 50px;
-    h2{
+
+    h2 {
         font-size: 20px;
         font-weight: bold;
     }
 }
-.content2{
+
+.content2 {
     background-color: white;
-        padding: 15px;
+    padding: 15px;
     background-color: white;
     border: 2px solid;
     border-color: #f4f5f7b4;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
-.text{
+
+.text {
     font-weight: bold;
-    width:fit-content;
+    width: fit-content;
     font-size: 25px;
 }
-#contenti{
-        padding: 25px;
-    background-color: white;
-    border: 2px solid;
-    border-color: #f4f5f7b4;
-    border-radius: 20px ;
-    width: fit-content;
-    height: 270px;
-}
-.contenti{
+
+#contenti {
     padding: 25px;
     background-color: white;
     border: 2px solid;
     border-color: #f4f5f7b4;
-    border-radius: 20px ;
+    border-radius: 20px;
+    width: fit-content;
+    height: 270px;
+}
+
+.contenti {
+    padding: 25px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #f4f5f7b4;
+    border-radius: 20px;
     width: fit-content;
     height: 210px;
 }
-.contenedor{
+
+.contenedor {
     padding: 40px;
 }
-.contenedor1{
+
+.contenedor1 {
     border-left: 3px solid;
     border-color: #FFC928;
     display: flex;
     margin: 0;
-    div{
+
+    div {
         margin-right: 60px;
     }
 }
-.content h3{
+
+.content h3 {
     font-size: 20px;
     font-weight: bold;
     background-color: #FFC928;
     color: #0B1F3A;
-    padding: 10px ;
+    padding: 10px;
     width: fit-content;
     margin-top: 0px;
     border-radius: 30px;
     transition: all 0.3s ease;
 }
-.Metas-objetivos-content{
+
+.Metas-objetivos-content {
     gap: 7px;
     padding: 70px;
-    h4{
+
+    h4 {
         color: #ffc928;
         font-size: 30px;
     }
-    h1{
+
+    h1 {
         font-size: 60px;
     }
-    strong{
+
+    strong {
         color: #ffc928;
     }
+
     p {
         font-size: 20px;
     }
+
     color: white;
 }
+
 @media screen and (max-width: 852px) {
 
     .nav {
@@ -176,5 +199,693 @@
         padding: 8px 10px;
         font-size: 14px;
         white-space: nowrap;
+    }
+}
+
+/* =========================================================
+   HORIZONTAL (Landscape): 1177 x 706
+========================================================= */
+@media screen and (orientation: landscape) and (max-width: 1177px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img,
+    video,
+    canvas,
+    svg,
+    iframe,
+    table {
+        max-width: 100%;
+    }
+
+    img {
+        height: auto;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    li,
+    td,
+    th {
+        overflow-wrap: break-word;
+    }
+
+    /* NAV */
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px 8px;
+    }
+
+    /* HERO */
+    .Metas-objetivos-content {
+        padding: 50px 6%;
+    }
+
+    .Metas-objetivos-content h1 {
+        font-size: clamp(36px, 4.5vw, 52px);
+    }
+
+    .Metas-objetivos-content h4 {
+        font-size: clamp(20px, 2.5vw, 26px);
+    }
+
+    .Metas-objetivos-content p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    /* CONTENEDORES */
+    .contenedor {
+        padding: 30px 5%;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 24px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content-content,
+    .content-ton,
+    .content-contentt,
+    #content-contentt,
+    .content2,
+    .text,
+    #contenti,
+    .contenti {
+        flex: 1 1 260px;
+        width: auto;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .content-content {
+        margin-top: 0;
+    }
+
+    .content-ton {
+        margin-left: 0;
+    }
+
+    .content-contentt,
+    #content-contentt {
+        margin-right: 0;
+    }
+
+    #contenti,
+    .contenti {
+        height: auto;
+        min-height: 210px;
+    }
+
+    .content h3 {
+        max-width: 100%;
+    }
+
+    .contenedor1 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contenedor1 div {
+        margin-right: 0;
+        min-width: 0;
+        flex: 1 1 240px;
+    }
+}
+
+
+/* =========================================================
+   VERTICAL (Portrait): 706 x 1177
+========================================================= */
+@media screen and (orientation: portrait) and (max-width: 720px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img,
+    video,
+    canvas,
+    svg,
+    iframe,
+    table {
+        max-width: 100%;
+    }
+
+    img {
+        height: auto;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    li,
+    td,
+    th {
+        overflow-wrap: break-word;
+    }
+
+    /* NAV */
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px 8px;
+    }
+
+    /* HERO */
+    .Metas-objetivos-content {
+        padding: 30px 5%;
+    }
+
+    .Metas-objetivos-content h1 {
+        font-size: clamp(30px, 8vw, 40px);
+    }
+
+    .Metas-objetivos-content h4 {
+        font-size: 20px;
+    }
+
+    .Metas-objetivos-content p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    /* CONTENEDORES: todo en una columna */
+    .contenedor {
+        padding: 20px 4%;
+    }
+
+    .content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 14px;
+        padding: 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content-content,
+    .content-ton,
+    .content-contentt,
+    #content-contentt,
+    .content2,
+    .text,
+    #contenti,
+    .contenti {
+        flex: none;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0 !important;
+    }
+
+    .content-content {
+        margin-top: 0;
+        font-size: 17px;
+        padding: 18px;
+    }
+
+    .content-ton {
+        font-size: 17px;
+    }
+
+    .content-contentt {
+        padding: 14px;
+    }
+
+    .content-contentt p {
+        font-size: 17px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    #contenti,
+    .contenti {
+        height: auto;
+        min-height: 0;
+    }
+
+    .content h3 {
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    .contenedor1 {
+        flex-direction: column;
+        padding-left: 15px;
+    }
+
+    .contenedor1 div {
+        margin-right: 0;
+    }
+
+}
+
+/* =========================================================
+   LOGO DEL NAVBAR MÁS PEQUEÑO (ambos modos)
+========================================================= */
+@media screen and (orientation: landscape) and (max-width: 1177px),
+screen and (orientation: portrait) and (max-width: 720px) {
+
+    .nav {
+        padding: 6px 16px;
+        min-height: 0;
+    }
+
+    .nav .nav-item:first-child img,
+    .nav img {
+        height: 40px !important;
+        width: auto !important;
+        max-width: 140px;
+        object-fit: contain;
+    }
+
+    .nav .nav-link {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   TARJETAS MEJOR DISTRIBUIDAS - HORIZONTAL (1177 x 706)
+   3 columnas
+========================================================= */
+@media screen and (orientation: landscape) and (max-width: 1177px) {
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        align-items: stretch;
+        padding: 24px;
+    }
+
+    .content-content,
+    .content-ton,
+    .content-contentt,
+    #content-contentt,
+    .content2,
+    #contenti,
+    .contenti {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0 !important;
+        flex: none;
+    }
+
+    /* Títulos y textos sueltos ocupan toda la fila */
+    .content>h3,
+    .content>.text,
+    .text {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   TARJETAS MEJOR DISTRIBUIDAS - VERTICAL (706 x 1177)
+   2 columnas
+========================================================= */
+@media screen and (orientation: portrait) and (max-width: 720px) {
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        flex-direction: unset;
+        gap: 14px;
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .content-content,
+    .content-ton,
+    .content-contentt,
+    #content-contentt,
+    .content2,
+    #contenti,
+    .contenti {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0 !important;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    .content-contentt p {
+        font-size: 16px;
+    }
+
+    /* Títulos y textos sueltos ocupan toda la fila */
+    .content>h3,
+    .content>.text,
+    .text {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   LAYOUT: imagen + Objetivo arriba, 4 tarjetas debajo
+   BORDE AMARILLO ARRIBA
+========================================================= */
+
+/* ---------- HORIZONTAL (1177 x 706) ---------- */
+@media screen and (orientation: landscape) and (max-width: 1177px) {
+
+    /* Fila 1: imagen + tarjeta "Objetivo 1" */
+    .content {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        gap: 24px;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content-content,
+    .content-ton,
+    .content-contentt,
+    #content-contentt,
+    .content2 {
+        width: 100%;
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Fila 2: las 4 tarjetas ocupan TODO el ancho */
+    .contenedor1 {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        align-items: stretch;
+        width: 100%;
+        margin: 0;
+        padding: 20px 0 0;
+        border-left: none;
+        border-top: 3px solid #FFC928;
+    }
+
+    /* Quita el margin-right: 60px de tu CSS original en todos los div internos */
+    .contenedor1 div {
+        margin-right: 0 !important;
+        min-width: 0;
+    }
+
+    /* Cada tarjeta */
+    .contenedor1>div {
+        width: 100%;
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 18px;
+        background-color: #ffffff;
+        border: 2px solid #f4f5f7b4;
+        border-radius: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        overflow: visible !important;
+    }
+
+    /* Tarjeta anidada dentro de otra (la de "Instalar 5,000...") */
+    .contenedor1>div>div,
+    #contenti,
+    .contenti {
+        width: 100%;
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 10px 0 0 !important;
+        padding: 12px;
+    }
+
+    .contenedor1 p,
+    .contenedor1 span {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .contenedor1 img {
+        max-width: 50px;
+        height: auto;
+    }
+
+    .text {
+        width: 100%;
+        font-size: 22px;
+    }
+}
+
+
+/* ---------- VERTICAL (706 x 1177) ---------- */
+@media screen and (orientation: portrait) and (max-width: 720px) {
+
+    /* Fila 1: imagen y tarjeta "Objetivo 1" en una columna */
+    .content {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+        align-items: start;
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   "NUESTRAS METAS" SIN TARJETA + ESPACIOS + TAMAÑOS
+========================================================= */
+
+/* ---------- HORIZONTAL (1177 x 706) ---------- */
+@media screen and (orientation: landscape) and (max-width: 1177px) {
+
+    /* Más espacio entre las 4 columnas (reemplaza el margin de tu original) */
+    .contenedor1 {
+        gap: 28px;
+        padding-top: 24px;
+    }
+
+    /* Div "Nuestras metas": sin tarjeta, con el mismo fondo de atrás */
+    .contenedor1 > div:first-child {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /* La tarjeta que está dentro (Instalar 5,000...) separada del título */
+    .contenedor1 > div:first-child > div,
+    .contenedor1 > div > div {
+        margin-top: 16px !important;
+    }
+
+    /* Título */
+    .text,
+    .contenedor1 .text {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
+
+    /* Textos de las tarjetas */
+    .contenedor1 p,
+    .contenedor1 span,
+    .contenedor1 h2,
+    .contenedor1 h3 {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    /* Imágenes / íconos */
+    .contenedor1 img {
+        width: 56px;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* ---------- VERTICAL (706 x 1177) ---------- */
+@media screen and (orientation: portrait) and (max-width: 720px) {
+
+    .contenedor1 {
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    /* Div "Nuestras metas": sin tarjeta, con el mismo fondo de atrás */
+    .contenedor1 > div:first-child {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .contenedor1 > div:first-child > div,
+    .contenedor1 > div > div {
+        margin-top: 14px !important;
+    }
+
+    /* Título */
+    .text,
+    .contenedor1 .text {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
+
+    /* Textos de las tarjetas */
+    .contenedor1 p,
+    .contenedor1 span,
+    .contenedor1 h2,
+    .contenedor1 h3 {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    /* Imágenes / íconos */
+    .contenedor1 img {
+        width: 48px;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 8px;
+    }
+}
+
+/* =========================================================
+   IMÁGENES MÁS GRANDES + ESPACIO PARA "NUESTRAS METAS"
+========================================================= */
+
+/* ---------- HORIZONTAL (1177 x 706) ---------- */
+@media screen and (orientation: landscape) and (max-width: 1177px) {
+
+    /* Título "Nuestras metas": bloque con su propio espacio */
+    .contenedor1 > div:first-child > .text {
+        min-height: 84px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    /* La tarjeta de adentro (Reducir en 40%) queda debajo del título */
+    .contenedor1 > div:first-child > div {
+        margin-top: 16px !important;
+    }
+
+    /* Las 3 tarjetas de la derecha bajan al nivel de la tarjeta de adentro */
+    .contenedor1 > div:not(:first-child) {
+        margin-top: 100px !important;
+    }
+
+    /* Contenido de las tarjetas alineado arriba */
+    .contenedor1 > div:not(:first-child),
+    .contenedor1 > div:first-child > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    /* Imágenes más grandes (anula el max-width anterior) */
+    .contenedor1 img {
+        width: 80px !important;
+        height: 80px !important;
+        max-width: none !important;
+        object-fit: contain;
+        margin-bottom: 12px;
+    }
+
+    .contenedor1 p,
+    .contenedor1 span {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+
+/* ---------- VERTICAL (706 x 1177) ---------- */
+@media screen and (orientation: portrait) and (max-width: 720px) {
+
+    .contenedor1 > div:first-child > .text {
+        min-height: 70px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedor1 > div:first-child > div {
+        margin-top: 14px !important;
+    }
+
+    /* Solo la tarjeta que queda al lado de "Nuestras metas" baja */
+    .contenedor1 > div:nth-child(2) {
+        margin-top: 84px !important;
+    }
+
+    .contenedor1 > div:not(:first-child),
+    .contenedor1 > div:first-child > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    /* Imágenes más grandes */
+    .contenedor1 img {
+        width: 68px !important;
+        height: 68px !important;
+        max-width: none !important;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .contenedor1 p,
+    .contenedor1 span {
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
