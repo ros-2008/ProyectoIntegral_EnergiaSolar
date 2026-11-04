@@ -1,19 +1,53 @@
-.nav {
-    background-color: #0B1F3A !important;
+.navbar {
+    width: 100%;
+    min-height: 90px;
+    background: var(--azul);
+    padding: 10px 6%;
+    background-color: #0B1F3A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 4px solid var(--amarillo);
 }
 
-.nav .nav-link {
-    color: white;
-    padding: 10px 16px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-.nav .nav-link:hover {
-    color: #0b1f3a;
-    background-color: #ffc928;
+.logo img {
+    height: 65px;
+    width: auto;
+    display: block;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links a {
+    display: block;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+    padding: 12px 18px;
+    border-radius: 5px;
+    white-space: nowrap;
+
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+    background: var(--amarillo);
+    color: var(--azul);
+}
 .Metas-objetivos {
     background-image: url(img/Amanecer\ entre\ montañas\ y\ paneles\ solares.png);
     min-height: 230px;
@@ -179,6 +213,54 @@
 
     color: white;
 }
+
+.footer {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #111111;
+    padding: 30px 6%;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: auto;
+}
+
+.footer-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-text a {
+    color: #DAD7CD;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+    color: #FFC928;
+}
+
+.footer>a img.instagram {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer p {
+    color: #DAD7CD;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+}
+
 
 @media screen and (max-width: 852px) {
 
