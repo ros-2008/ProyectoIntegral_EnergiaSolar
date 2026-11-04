@@ -202,26 +202,6 @@ body {
     margin-left: 60px;
 }
 
-.div1-text {
-    padding: 60px;
-    font-family: 'Montserrat', sans-serif;
-
-    h4 {
-        color: #FFC928;
-        font-weight: 700;
-    }
-
-    h2 {
-        color: #0b1f3a;
-        font-weight: 800;
-        margin-bottom: 20px;
-    }
-
-    p {
-        margin-bottom: 30px;
-        font-weight: 530 !important;
-    }
-}
 
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
