@@ -1,226 +1,295 @@
+
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolTech</title>
+    <title>SolTech | Energía Solar</title>
     <link rel="stylesheet" href="inicio.css">
 </head>
 
 <body>
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link" href="inicio.html"><img src="img/Logo-Solari.png" alt="" height="80px"></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="conocenos.html">Conócenos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="metas-objetivos.html">Metas y Objetivos</a>
-        </li>
-    </ul>
 
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <a class="logo" href="inicio.html">
+            <img src="img/Logo-Solari.png" alt="Logo SolTech">
+        </a>
 
+        <div class="nav-links">
+            <a href="inicio.html" class="activo">Inicio</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="metas-objetivos.html">Metas y Objetivos</a>
+        </div>
+    </nav>
+
+    <!-- PORTADA -->
     <section class="contenido">
+
         <div class="carrusel">
-            <img src="img/panel-fondo1.png" class="activo" id="css1">
-            <img src="img/panel-fondo2.png" id="css2">
-            <img src="img/panel-fondo3.jpg" id="css3">
+            <img src="img/panel-fondo1.png" class="activo" id="css1" alt="Paneles solares">
+            <img src="img/panel-fondo2.png" id="css2" alt="Instalación solar">
+            <img src="img/panel-fondo3.jpg" id="css3" alt="Energía solar">
         </div>
 
         <div class="contenido-content">
             <h1>ENERGÍA SOLAR</h1>
 
             <h2>
-                Un futuro más <br>
+                Un futuro más<br>
                 <strong>brillante</strong> empieza hoy
             </h2>
 
             <p class="content">
-                Instalamos soluciones de energía solar
-                para hogares y empresas, ayudándote a
-                ahorrar en tu factura de luz.
+                Instalamos soluciones de energía solar para hogares y empresas,
+                ayudándote a ahorrar en tu factura de luz.
             </p>
 
-            <a href="#" class="boton">
+            <a href="#contacto" class="boton">
                 Cotiza tu sistema solar →
             </a>
         </div>
+
     </section>
 
-    <div class="contenedor">
+    <!-- BENEFICIOS -->
+    <section class="contenedor" id="beneficios">
+
         <div class="centrar">
-            <div id="prueba">
-                <img src="img/imagen1.png" alt="" height="120px">
+
+            <article class="beneficio">
+                <img src="img/imagen1.png" alt="Energía limpia">
                 <h3>Energía limpia</h3>
-                <p>Reduce tu huella de carbono <br>
-                    y cuida el medio ambiente.</p>
-            </div>
-            <div>
-                <center><img src="img/imagen2.png" alt="" height="120px"></center>
+                <p>Reduce tu huella de carbono y cuida el medio ambiente.</p>
+            </article>
+
+            <article class="beneficio">
+                <img src="img/imagen2.png" alt="Ahorro energético">
                 <h3>Ahorro garantizado</h3>
-                <p>Disminuye tus costos de <br>
-                    electricidad desde el primer día</p>
-            </div>
-            <div>
-                <center><img src="img/imagen3.png" alt="" height="120px"></center>
+                <p>Disminuye tus costos de electricidad desde el primer día.</p>
+            </article>
+
+            <article class="beneficio">
+                <img src="img/imagen3.png" alt="Plusvalía">
                 <h3>Plusvalía para tu propiedad</h3>
-                <p>Aumenta el valor de tu hogar <br> o negocio</p>
-            </div>
-            <div>
-                <center><img src="img/imagen4.png" alt="" height="120px"></center>
+                <p>Aumenta el valor de tu hogar o negocio.</p>
+            </article>
+
+            <article class="beneficio">
+                <img src="img/imagen4.png" alt="Tecnología solar">
                 <h3>Tecnología de vanguardia</h3>
-                <p>Paneles solares de alta eficiencia <br> y larga vida útil</p>
-            </div>
-            <div>
-                <center><img src="img/imagen5.png" alt="" height="120px"></center>
+                <p>Paneles solares de alta eficiencia y larga vida útil.</p>
+            </article>
+
+            <article class="beneficio">
+                <img src="img/imagen5.png" alt="Soporte experto">
                 <h3>Soporte experto</h3>
-                <p>Te acompañamos en todo <br> el proceso, desde la asesoría <br> hasta la instalación.</p>
+                <p>
+                    Te acompañamos en todo el proceso,
+                    desde la asesoría hasta la instalación.
+                </p>
+            </article>
 
-            </div>
         </div>
-    </div>
 
-    <div class="div1">
-        <div>
-            <img src="img/imagen6.png" alt="" width="800px">
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="div1" id="nosotros">
+
+        <div class="div1-imagen">
+            <img src="img/imagen6.png" alt="Soluciones de energía solar">
         </div>
+
         <div class="div1-contenido">
             <h4>SOBRE NOSOTROS</h4>
-            <h2>Hacemos que la energía <br> solar sea simple</h2>
-            <p>En SolTech, queremos que un mundo más limpio y sostenible sea <strong>real.</strong> <br>
-                Somos una empresa especializada en la instalación de sistemas de energía <br>
-                solar para hogares y negocios,
-                con un enfoque en la calidad, la innovacion <br>y la satisfacción de nuestros clientes.</p>
-            <a href="#" class="boton">Nuestra historia</a>
-        </div>
-    </div>
 
-    <div class="card1">
+            <h2>Hacemos que la energía solar sea simple</h2>
+
+            <p>
+                En SolTech, queremos que un mundo más limpio y sostenible sea
+                <strong>real.</strong>
+                Somos una empresa especializada en la instalación de sistemas
+                de energía solar para hogares y negocios, con un enfoque en
+                la calidad, la innovación y la satisfacción de nuestros clientes.
+            </p>
+
+            <a href="conocenos.html" class="boton">
+                Nuestra historia →
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="card1">
+
         <div class="centra">
-            <div class="card1-content">
-                <center>
-                    <h1>+1,000</h1>
-                    <p>Proyectos instalados</p>
-                </center>
-            </div>
-            <div class="card1-content">
-                <center>
-                    <h1>+5 MW</h1>
-                    <p>De energía generada</p>
-                </center>
-            </div>
-            <div class="card1-content">
-                <h1>98</h1>
-                <p>Clientes satisfechos</p>
-            </div>
-            <div class="card1-content">
-                <h1>10+</h1>
-                <p>Años de experiencia</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="content-text">
+            <article class="card1-content">
+                <h2>+1,000</h2>
+                <p>Proyectos instalados</p>
+            </article>
+
+            <article class="card1-content">
+                <h2>+5 MW</h2>
+                <p>De energía generada</p>
+            </article>
+
+            <article class="card1-content">
+                <h2>98</h2>
+                <p>Clientes satisfechos</p>
+            </article>
+
+            <article class="card1-content">
+                <h2>10+</h2>
+                <p>Años de experiencia</p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="content-text" id="servicios">
+
         <div class="text1-content">
+
             <div class="text1">
                 <h2>Nuestros servicios</h2>
                 <h1>Soluciones solares para cada necesidad</h1>
             </div>
-            <div class="text2">
-                <p>Ofrecemos una gama completa de servicios para que <br> aproveches al máximo la energía del sol.</p>
-            </div>
-        </div>
-        <div class="content-cards">
-            <div class="card1-cards">
-                <div class="centrador">
-                    <img src="img/icono1.png" alt="">
-                    <h3>Instalaciones residenciales</h3>
-                    <p>Sistemas personalizados para <br>
-                        hogares, con la mejor tecnología <br>
-                        y garantía.</p>
-                    <br>
-                    <a href="#" class="boton">Más información</a>
-                </div>
-            </div>
-            <div class="card1-cards">
-                <div class="centrador">
-                    <img src="img/icono2.png" alt="">
-                    <h3>Proyectos comerciales</h3>
-                    <p>Soluciones a medida para <br>
-                        empresas que buscan eficiencia <br>
-                        y ahorro.</p>
-                    <br>
-                    <a href="#" class="boton">Más información</a>
-                </div>
-            </div>
-            <div class="card1-cards">
-                <div class="centrador">
-                    <img src="img/icono3.png" alt="">
-                    <h3>Mantenimiento</h3>
-                    <p>Revisión y cuidado de tu sistema <br>
-                        para un rendimiento óptimo <br>siempre.</p>
-                    <br>
-                    <a href="#" class="boton">Más información</a>
-                </div>
-            </div>
-            <div class="card1-cards">
-                <div class="centrador">
-                    <img src="img/icono4.png" alt="" id="img1">
-                    <h3>Sistemas de almacenamiento</h3>
-                    <p>Baterías solares para que <br>
-                        aproveches la energía, incluso de noche</p>
-                    <br>
-                    <a href="#" class="boton">Más información</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <section class="contenido2">
-        <div class="contenido2-content">
-            <h4>¿LISTO PARA CAMBIAR?</h4>
-            <h1>Tu energía, en manos de expertos</h1>
-            <p>Solicita una cotización sin compromiso y da el primer paso <br>
-                hacia un futuro más sostenible.</p>
-            <br>
-            <a href="#" class="boton">Solicita tu cotización.</a>
+            <div class="text2">
+                <p>
+                    Ofrecemos una gama completa de servicios para que
+                    aproveches al máximo la energía del sol.
+                </p>
+            </div>
+
         </div>
+
+        <div class="content-cards">
+
+            <article class="card1-cards">
+                <div class="centrador">
+                    <img src="img/icono1.png" alt="Instalaciones residenciales">
+
+                    <h3>Instalaciones residenciales</h3>
+
+                    <p>
+                        Sistemas personalizados para hogares,
+                        con la mejor tecnología y garantía.
+                    </p>
+
+                    <a href="#contacto" class="boton">Más información</a>
+                </div>
+            </article>
+
+            <article class="card1-cards">
+                <div class="centrador">
+                    <img src="img/icono2.png" alt="Proyectos comerciales">
+
+                    <h3>Proyectos comerciales</h3>
+
+                    <p>
+                        Soluciones a medida para empresas
+                        que buscan eficiencia y ahorro.
+                    </p>
+
+                    <a href="#contacto" class="boton">Más información</a>
+                </div>
+            </article>
+
+            <article class="card1-cards">
+                <div class="centrador">
+                    <img src="img/icono3.png" alt="Mantenimiento solar">
+
+                    <h3>Mantenimiento</h3>
+
+                    <p>
+                        Revisión y cuidado de tu sistema
+                        para un rendimiento óptimo siempre.
+                    </p>
+
+                    <a href="#contacto" class="boton">Más información</a>
+                </div>
+            </article>
+
+            <article class="card1-cards">
+                <div class="centrador">
+                    <img src="img/icono4.png" alt="Almacenamiento solar" id="img1">
+
+                    <h3>Sistemas de almacenamiento</h3>
+
+                    <p>
+                        Baterías solares para que aproveches
+                        la energía, incluso de noche.
+                    </p>
+
+                    <a href="#contacto" class="boton">Más información</a>
+                </div>
+            </article>
+
+        </div>
+
     </section>
 
-    <div class="footer">
-        <img src="img/Logo-Solari-fondo.png" alt="" width="120px">
-        <div class="footer-text">
-            <div>
-                <a href="inicio.html">
-                    <h4>Inicio</h4>
-                </a>
-            </div>
-            <div>
-                <h4>Nosotros</h4>
-            </div>
-            <div>
-                <h4>Servicios</h4>
-            </div>
-            <div>
-                <h4>Beneficios</h4>
-            </div>
-            <div>
-                <h4>Contacto</h4>
-            </div>
-        </div>
-        <a href="https://www.instagram.com/solte.chgt/"><img
-                src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png" alt="" width="50px"></a>
-        <p>&reg2026 SolTech. Todos los derechos reservados. </p>
-    </div>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
-        crossorigin="anonymous"></script>
-    <script src="inicio.js"></script>
-</body>
-<!-- galaxy tab A7 @media -->
+    <!-- COTIZACIÓN -->
+    <section class="contenido2" id="contacto">
 
+        <div class="contenido2-content">
+
+            <h4>¿LISTO PARA CAMBIAR?</h4>
+
+            <h1>Tu energía, en manos de expertos</h1>
+
+            <p>
+                Solicita una cotización sin compromiso y da el primer paso
+                hacia un futuro más sostenible.
+            </p>
+
+            <a href="https://www.instagram.com/solte.chgt/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="boton">
+                Solicita tu cotización →
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <a href="inicio.html" class="footer-logo">
+            <img src="img/Logo-Solari-fondo.png" alt="Logo SolTech">
+        </a>
+
+        <div class="footer-text">
+            <a href="inicio.html">Inicio</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="metas-objetivos.html">Metas y Objetivos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
+        <a href="https://www.instagram.com/solte.chgt/"
+           target="_blank"
+           rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png"
+                 alt="Instagram"
+                 class="instagram">
+        </a>
+
+        <p>© 2026 SolTech. Todos los derechos reservados.</p>
+
+    </footer>
+
+    <script src="inicio.js"></script>
+
+</body>
 </html>
