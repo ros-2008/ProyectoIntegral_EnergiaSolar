@@ -119,6 +119,16 @@
     height: 210px;
 }
 
+.contenti1 {
+    padding: 25px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #f4f5f7b4;
+    border-radius: 20px;
+    width: fit-content;
+    height: 300px;
+}
+
 .contenedor {
     padding: 40px;
 }
