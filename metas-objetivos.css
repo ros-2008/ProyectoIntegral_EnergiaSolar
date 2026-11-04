@@ -1,17 +1,26 @@
-.nav {
-    background-color: #0B1F3A !important;
+.navbar {
+    width: 100%;
+    min-height: 90px;
+    background: var(--azul);
+    padding: 10px 6%;
+    background-color: #0B1F3A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 4px solid var(--amarillo);
 }
 
-.nav .nav-link {
-    color: white;
-    padding: 10px 16px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-.nav .nav-link:hover {
-    color: #0b1f3a;
-    background-color: #ffc928;
+.logo img {
+    height: 65px;
+    width: auto;
+    display: block;
 }
 
 .Metas-objetivos {
