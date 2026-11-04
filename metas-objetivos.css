@@ -13,7 +13,31 @@
     color: #0b1f3a;
     background-color: #ffc928;
 }
-
+.Metas-objetivos{
+    background-image: url(img/Amanecer\ entre\ montañas\ y\ paneles\ solares.png);
+    min-height: 230px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Metas-objetivos-content{
+    gap: 7px;
+    padding: 70px;
+    h4{
+        color: #ffc928;
+        font-size: 30px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    strong{
+        color: #ffc928;
+    }
+    p {
+        font-size: 20px;
+    }
+    color: white;
+}
 @media screen and (max-width: 852px) {
 
     .nav {
