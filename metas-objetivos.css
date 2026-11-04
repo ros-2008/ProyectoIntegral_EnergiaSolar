@@ -20,6 +20,44 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.content{
+    border: 2px solid;
+    border-color: #f4f5f7b4;
+    border-radius: 20px ;
+    width: auto;
+    display: flex;
+    padding: 30px;
+    background-color:   #f4f5f7b4 ;
+    div{
+        margin-right: 80px;
+    }
+}
+.content-content{
+    padding: 15px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #f4f5f7b4;
+    border-radius: 20px ;
+    h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.contenedor{
+    padding: 50px;
+}
+.content h3{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FFC928;
+    color: #0B1F3A;
+    padding: 10px ;
+    width: fit-content;
+    margin-top: 15px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
 .Metas-objetivos-content{
     gap: 7px;
     padding: 70px;
