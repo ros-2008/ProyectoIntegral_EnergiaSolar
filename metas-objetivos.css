@@ -324,6 +324,51 @@ a {
     padding: 30px;
     margin-left: 60px;
 }
+@media (min-width: 901px) and (max-width: 1500px) {
+
+    .content {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .content-contentt,
+    #content-contentt {
+        flex: 1;
+        min-width: 300px;
+        margin-right: 0;
+    }
+
+    .contenedor1 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: start;
+        gap: 20px;
+        width: 100%;
+        border-left: none;
+        border-top: 3px solid #FFC928;
+        padding-top: 25px;
+        margin-top: 10px;
+    }
+
+    .contenedor1 div {
+        margin-right: 0;
+    }
+
+    .content-ton {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .content-content,
+    .contenti,
+    .contenti1,
+    #contenti {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+    }
+}
 
 @media (max-width: 1200px) {
 
