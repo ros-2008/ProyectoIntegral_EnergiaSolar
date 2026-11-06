@@ -1,26 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
 .navbar {
     width: 100%;
     min-height: 90px;
-    background: var(--azul);
     padding: 10px 6%;
-    background-color: #0B1F3A;
+    background-color: #0b1f3a;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    border-bottom: 4px solid var(--amarillo);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
+    gap: 25px;
+    position: relative;
+    z-index: 10;
 }
 
 .logo img {
-    height: 65px;
+    height: 75px;
     width: auto;
-    display: block;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+    color: #0B1F3A;
+    background-color: #FFC928;
 }
 
 .Metas-objetivos {
@@ -96,7 +139,6 @@
 .content2 {
     background-color: white;
     padding: 15px;
-    background-color: white;
     border: 2px solid;
     border-color: #f4f5f7b4;
     border-radius: 20px;
@@ -115,7 +157,7 @@
     border-color: #f4f5f7b4;
     border-radius: 20px;
     width: fit-content;
-    height: 270px;
+    height: 350px;
 }
 
 .contenti {
@@ -125,7 +167,17 @@
     border-color: #f4f5f7b4;
     border-radius: 20px;
     width: fit-content;
-    height: 210px;
+    height: 350px;
+}
+
+.contenti1 {
+    padding: 25px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #f4f5f7b4;
+    border-radius: 20px;
+    width: fit-content;
+    height: 300px;
 }
 
 .contenedor {
@@ -158,6 +210,7 @@
 .Metas-objetivos-content {
     gap: 7px;
     padding: 70px;
+    color: white;
 
     h4 {
         color: #ffc928;
@@ -175,726 +228,299 @@
     p {
         font-size: 20px;
     }
+}
 
+.footer {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #111111;
+    padding: 30px 6%;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: auto;
+}
+
+.footer-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-text a {
+    color: #DAD7CD;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+    color: #FFC928;
+}
+
+.footer>a img.instagram {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer p {
+    color: #DAD7CD;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+}
+
+.boton {
+    background-color: #FFC928;
+    color: #0B1F3A;
+    padding: 15px 25px;
+    margin-top: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.cambiodecolor {
+    color: #FFC928;
+}
+
+.contenido2 {
+    background-image: url(img/icono.png);
+    min-height: 230px;
+    margin-left: 20px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+
+.contenido2 h4 {
+    color: #FFC928;
+}
+
+.contenido2 h1 {
     color: white;
 }
 
-@media screen and (max-width: 852px) {
-
-    .nav {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 4px 8px;
-        padding: 8px 12px;
-        margin: 0;
-    }
-
-    .nav .nav-item:first-child {
-        margin-right: auto;
-    }
-
-    .nav .nav-item:first-child .nav-link {
-        padding: 0;
-    }
-
-    .nav .nav-item:first-child img {
-        height: 55px;
-        width: auto;
-    }
-
-    .nav .nav-link {
-        padding: 8px 10px;
-        font-size: 14px;
-        white-space: nowrap;
-    }
+.contenido2 p {
+    color: white;
 }
 
-/* =========================================================
-   HORIZONTAL (Landscape): 1177 x 706
-========================================================= */
-@media screen and (orientation: landscape) and (max-width: 1177px) {
+.contenido2-content {
+    padding: 30px;
+    margin-left: 60px;
+}
 
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+@media (max-width: 1200px) {
 
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    img,
-    video,
-    canvas,
-    svg,
-    iframe,
-    table {
-        max-width: 100%;
-    }
-
-    img {
-        height: auto;
-    }
-
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    a,
-    li,
-    td,
-    th {
-        overflow-wrap: break-word;
-    }
-
-    /* NAV */
-    .nav {
-        display: flex;
+    .navbar {
         flex-wrap: wrap;
-        align-items: center;
-        gap: 4px 8px;
+        justify-content: center;
+        padding: 10px 4%;
+        gap: 10px;
     }
 
-    /* HERO */
+    .logo img {
+        height: 60px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
     .Metas-objetivos-content {
-        padding: 50px 6%;
+        padding: 40px 25px;
     }
 
     .Metas-objetivos-content h1 {
-        font-size: clamp(36px, 4.5vw, 52px);
+        font-size: 38px;
     }
 
     .Metas-objetivos-content h4 {
-        font-size: clamp(20px, 2.5vw, 26px);
+        font-size: 22px;
     }
 
     .Metas-objetivos-content p {
-        font-size: 18px;
-        line-height: 1.6;
+        font-size: 17px;
     }
 
-    /* CONTENEDORES */
+    .Metas-objetivos-content br,
+    .content br,
+    .contenido2 br {
+        display: none;
+    }
+
     .contenedor {
-        padding: 30px 5%;
+        padding: 20px;
     }
 
     .content {
-        flex-wrap: wrap;
-        gap: 16px;
-        padding: 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
         width: 100%;
-        max-width: 100%;
-    }
-
-    .content-content,
-    .content-ton,
-    .content-contentt,
-    #content-contentt,
-    .content2,
-    .text,
-    #contenti,
-    .contenti {
-        flex: 1 1 260px;
-        width: auto;
-        min-width: 0;
-        max-width: 100%;
-    }
-
-    .content-content {
-        margin-top: 0;
-    }
-
-    .content-ton {
-        margin-left: 0;
     }
 
     .content-contentt,
     #content-contentt {
-        margin-right: 0;
-    }
-
-    #contenti,
-    .contenti {
-        height: auto;
-        min-height: 210px;
-    }
-
-    .content h3 {
-        max-width: 100%;
+        width: 100%;
+        margin: 0;
     }
 
     .contenedor1 {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
+        width: 100%;
+        border-left: none;
+        padding-left: 0;
     }
 
     .contenedor1 div {
         margin-right: 0;
-        min-width: 0;
-        flex: 1 1 240px;
-    }
-}
-
-
-/* =========================================================
-   VERTICAL (Portrait): 706 x 1177
-========================================================= */
-@media screen and (orientation: portrait) and (max-width: 720px) {
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
-
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    img,
-    video,
-    canvas,
-    svg,
-    iframe,
-    table {
-        max-width: 100%;
-    }
-
-    img {
-        height: auto;
-    }
-
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    a,
-    li,
-    td,
-    th {
-        overflow-wrap: break-word;
-    }
-
-    /* NAV */
-    .nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 4px 8px;
-    }
-
-    /* HERO */
-    .Metas-objetivos-content {
-        padding: 30px 5%;
-    }
-
-    .Metas-objetivos-content h1 {
-        font-size: clamp(30px, 8vw, 40px);
-    }
-
-    .Metas-objetivos-content h4 {
-        font-size: 20px;
-    }
-
-    .Metas-objetivos-content p {
-        font-size: 17px;
-        line-height: 1.6;
-    }
-
-    /* CONTENEDORES: todo en una columna */
-    .contenedor {
-        padding: 20px 4%;
-    }
-
-    .content {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 14px;
-        padding: 16px;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .content-content,
-    .content-ton,
-    .content-contentt,
-    #content-contentt,
-    .content2,
-    .text,
-    #contenti,
-    .contenti {
-        flex: none;
-        width: 100%;
-        min-width: 0;
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0 !important;
-    }
-
-    .content-content {
-        margin-top: 0;
-        font-size: 17px;
-        padding: 18px;
     }
 
     .content-ton {
-        font-size: 17px;
+        margin-left: 0;
+        width: 100%;
     }
 
-    .content-contentt {
-        padding: 14px;
-    }
-
-    .content-contentt p {
-        font-size: 17px;
-    }
-
-    .text {
-        font-size: 20px;
-    }
-
-    #contenti,
-    .contenti {
+    .content-content,
+    .contenti,
+    .contenti1,
+    #contenti {
+        width: 100%;
         height: auto;
-        min-height: 0;
-    }
-
-    .content h3 {
-        max-width: 100%;
+        margin-top: 0;
+        padding: 18px;
         font-size: 18px;
     }
 
-    .contenedor1 {
-        flex-direction: column;
-        padding-left: 15px;
+    .contenido2 {
+        margin: 0 15px;
     }
 
-    .contenedor1 div {
-        margin-right: 0;
+    .contenido2-content {
+        margin-left: 0;
+        padding: 30px 22px;
     }
 
-}
-
-/* =========================================================
-   LOGO DEL NAVBAR MÁS PEQUEÑO (ambos modos)
-========================================================= */
-@media screen and (orientation: landscape) and (max-width: 1177px),
-screen and (orientation: portrait) and (max-width: 720px) {
-
-    .nav {
-        padding: 6px 16px;
-        min-height: 0;
-    }
-
-    .nav .nav-item:first-child img,
-    .nav img {
-        height: 40px !important;
-        width: auto !important;
-        max-width: 140px;
-        object-fit: contain;
-    }
-
-    .nav .nav-link {
-        padding: 6px 10px;
-        font-size: 14px;
+    .footer {
+        justify-content: center;
+        text-align: center;
     }
 }
 
+@media (max-width: 600px) {
 
-/* =========================================================
-   TARJETAS MEJOR DISTRIBUIDAS - HORIZONTAL (1177 x 706)
-   3 columnas
-========================================================= */
-@media screen and (orientation: landscape) and (max-width: 1177px) {
+    .logo img {
+        height: 50px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .Metas-objetivos-content {
+        padding: 30px 20px;
+    }
+
+    .Metas-objetivos-content h1 {
+        font-size: 28px;
+    }
+
+    .Metas-objetivos-content h4 {
+        font-size: 18px;
+    }
+
+    .Metas-objetivos-content p {
+        font-size: 15px;
+    }
+
+    .contenedor {
+        padding: 15px;
+    }
 
     .content {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 18px;
-        align-items: stretch;
-        padding: 24px;
+        padding: 15px;
     }
 
-    .content-content,
-    .content-ton,
-    .content-contentt,
-    #content-contentt,
-    .content2,
-    #contenti,
-    .contenti {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-        margin: 0 !important;
-        flex: none;
+    .content img {
+        max-width: 100%;
     }
 
-    /* Títulos y textos sueltos ocupan toda la fila */
-    .content>h3,
-    .content>.text,
-    .text {
-        grid-column: 1 / -1;
-        width: 100%;
-    }
-}
-
-
-/* =========================================================
-   TARJETAS MEJOR DISTRIBUIDAS - VERTICAL (706 x 1177)
-   2 columnas
-========================================================= */
-@media screen and (orientation: portrait) and (max-width: 720px) {
-
-    .content {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        flex-direction: unset;
-        gap: 14px;
-        align-items: stretch;
-        padding: 16px;
-    }
-
-    .content-content,
-    .content-ton,
-    .content-contentt,
-    #content-contentt,
-    .content2,
-    #contenti,
-    .contenti {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-        margin: 0 !important;
-        padding: 16px;
-        font-size: 16px;
+    .content-contentt h1 {
+        font-size: 26px;
     }
 
     .content-contentt p {
         font-size: 16px;
     }
 
-    /* Títulos y textos sueltos ocupan toda la fila */
-    .content>h3,
-    .content>.text,
-    .text {
-        grid-column: 1 / -1;
-        width: 100%;
+    .contenedor1 {
+        grid-template-columns: 1fr;
     }
-}
 
-/* =========================================================
-   LAYOUT: imagen + Objetivo arriba, 4 tarjetas debajo
-   BORDE AMARILLO ARRIBA
-========================================================= */
-
-/* ---------- HORIZONTAL (1177 x 706) ---------- */
-@media screen and (orientation: landscape) and (max-width: 1177px) {
-
-    /* Fila 1: imagen + tarjeta "Objetivo 1" */
-    .content {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-        gap: 24px;
-        align-items: center;
-        width: 100%;
-        max-width: 100%;
+    .text {
+        font-size: 22px;
     }
 
     .content-content,
-    .content-ton,
-    .content-contentt,
-    #content-contentt,
-    .content2 {
-        width: 100%;
-        height: auto !important;
-        min-height: 0 !important;
-        margin: 0 !important;
+    .contenti,
+    .contenti1,
+    #contenti {
+        font-size: 17px;
+        padding: 15px;
     }
 
-    /* Fila 2: las 4 tarjetas ocupan TODO el ancho */
-    .contenedor1 {
-        grid-column: 1 / -1;
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 16px;
-        align-items: stretch;
-        width: 100%;
-        margin: 0;
-        padding: 20px 0 0;
-        border-left: none;
-        border-top: 3px solid #FFC928;
+    .contenido2 {
+        margin: 0 10px;
     }
 
-    /* Quita el margin-right: 60px de tu CSS original en todos los div internos */
-    .contenedor1 div {
-        margin-right: 0 !important;
-        min-width: 0;
-    }
-
-    /* Cada tarjeta */
-    .contenedor1>div {
-        width: 100%;
-        height: auto !important;
-        min-height: 0 !important;
-        margin: 0 !important;
-        padding: 18px;
-        background-color: #ffffff;
-        border: 2px solid #f4f5f7b4;
-        border-radius: 20px;
-        font-size: 16px;
-        line-height: 1.5;
-        overflow: visible !important;
-    }
-
-    /* Tarjeta anidada dentro de otra (la de "Instalar 5,000...") */
-    .contenedor1>div>div,
-    #contenti,
-    .contenti {
-        width: 100%;
-        height: auto !important;
-        min-height: 0 !important;
-        margin: 10px 0 0 !important;
-        padding: 12px;
-    }
-
-    .contenedor1 p,
-    .contenedor1 span {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    .contenedor1 img {
-        max-width: 50px;
-        height: auto;
-    }
-
-    .text {
-        width: 100%;
-        font-size: 22px;
-    }
-}
-
-
-/* ---------- VERTICAL (706 x 1177) ---------- */
-@media screen and (orientation: portrait) and (max-width: 720px) {
-
-    /* Fila 1: imagen y tarjeta "Objetivo 1" en una columna */
-    .content {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        gap: 18px;
-        align-items: start;
-        width: 100%;
-    }
-}
-
-/* =========================================================
-   "NUESTRAS METAS" SIN TARJETA + ESPACIOS + TAMAÑOS
-========================================================= */
-
-/* ---------- HORIZONTAL (1177 x 706) ---------- */
-@media screen and (orientation: landscape) and (max-width: 1177px) {
-
-    /* Más espacio entre las 4 columnas (reemplaza el margin de tu original) */
-    .contenedor1 {
-        gap: 28px;
-        padding-top: 24px;
-    }
-
-    /* Div "Nuestras metas": sin tarjeta, con el mismo fondo de atrás */
-    .contenedor1 > div:first-child {
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
-        padding: 0;
-    }
-
-    /* La tarjeta que está dentro (Instalar 5,000...) separada del título */
-    .contenedor1 > div:first-child > div,
-    .contenedor1 > div > div {
-        margin-top: 16px !important;
-    }
-
-    /* Título */
-    .text,
-    .contenedor1 .text {
+    .contenido2 h1 {
         font-size: 24px;
-        line-height: 1.2;
-        margin-bottom: 4px;
     }
 
-    /* Textos de las tarjetas */
-    .contenedor1 p,
-    .contenedor1 span,
-    .contenedor1 h2,
-    .contenedor1 h3 {
-        font-size: 15px;
-        line-height: 1.45;
+    .contenido2 p {
+        font-size: 14px;
     }
 
-    /* Imágenes / íconos */
-    .contenedor1 img {
-        width: 56px;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-}
-
-
-/* ---------- VERTICAL (706 x 1177) ---------- */
-@media screen and (orientation: portrait) and (max-width: 720px) {
-
-    .contenedor1 {
-        gap: 20px;
-        padding-top: 20px;
+    .boton {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 14px;
     }
 
-    /* Div "Nuestras metas": sin tarjeta, con el mismo fondo de atrás */
-    .contenedor1 > div:first-child {
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
-        padding: 0;
-    }
-
-    .contenedor1 > div:first-child > div,
-    .contenedor1 > div > div {
-        margin-top: 14px !important;
-    }
-
-    /* Título */
-    .text,
-    .contenedor1 .text {
-        font-size: 22px;
-        line-height: 1.2;
-        margin-bottom: 4px;
-    }
-
-    /* Textos de las tarjetas */
-    .contenedor1 p,
-    .contenedor1 span,
-    .contenedor1 h2,
-    .contenedor1 h3 {
-        font-size: 15px;
-        line-height: 1.45;
-    }
-
-    /* Imágenes / íconos */
-    .contenedor1 img {
-        width: 48px;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 8px;
-    }
-}
-
-/* =========================================================
-   IMÁGENES MÁS GRANDES + ESPACIO PARA "NUESTRAS METAS"
-========================================================= */
-
-/* ---------- HORIZONTAL (1177 x 706) ---------- */
-@media screen and (orientation: landscape) and (max-width: 1177px) {
-
-    /* Título "Nuestras metas": bloque con su propio espacio */
-    .contenedor1 > div:first-child > .text {
-        min-height: 84px;
-        margin: 0;
-        display: flex;
-        align-items: center;
-    }
-
-    /* La tarjeta de adentro (Reducir en 40%) queda debajo del título */
-    .contenedor1 > div:first-child > div {
-        margin-top: 16px !important;
-    }
-
-    /* Las 3 tarjetas de la derecha bajan al nivel de la tarjeta de adentro */
-    .contenedor1 > div:not(:first-child) {
-        margin-top: 100px !important;
-    }
-
-    /* Contenido de las tarjetas alineado arriba */
-    .contenedor1 > div:not(:first-child),
-    .contenedor1 > div:first-child > div {
-        display: flex;
+    .footer {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        margin-top: 50px;
     }
 
-    /* Imágenes más grandes (anula el max-width anterior) */
-    .contenedor1 img {
-        width: 80px !important;
-        height: 80px !important;
-        max-width: none !important;
-        object-fit: contain;
-        margin-bottom: 12px;
-    }
-
-    .contenedor1 p,
-    .contenedor1 span {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-}
-
-
-/* ---------- VERTICAL (706 x 1177) ---------- */
-@media screen and (orientation: portrait) and (max-width: 720px) {
-
-    .contenedor1 > div:first-child > .text {
-        min-height: 70px;
-        margin: 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .contenedor1 > div:first-child > div {
-        margin-top: 14px !important;
-    }
-
-    /* Solo la tarjeta que queda al lado de "Nuestras metas" baja */
-    .contenedor1 > div:nth-child(2) {
-        margin-top: 84px !important;
-    }
-
-    .contenedor1 > div:not(:first-child),
-    .contenedor1 > div:first-child > div {
-        display: flex;
+    .footer-text {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    /* Imágenes más grandes */
-    .contenedor1 img {
-        width: 68px !important;
-        height: 68px !important;
-        max-width: none !important;
-        object-fit: contain;
-        margin-bottom: 10px;
-    }
-
-    .contenedor1 p,
-    .contenedor1 span {
-        font-size: 16px;
-        line-height: 1.5;
+        gap: 12px;
     }
 }
