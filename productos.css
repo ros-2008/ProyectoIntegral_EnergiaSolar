@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 90px;
+    padding: 10px 6%;
+    background-color: #0b1f3a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+    color: #0B1F3A;
+    background-color: #FFC928;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+    color: #0B1F3A;
+    background-color: #FFC928;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #111111;
+    padding: 30px 6%;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: auto;
+}
+
+.footer-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-text a {
+    color: #DAD7CD;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+    color: #FFC928;
+}
+
+.footer>a img.instagram {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer p {
+    color: #DAD7CD;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+}
+
+.Metas-objetivos {
+    background-image: url(img/Amanecer\ entre\ montañas\ y\ paneles\ solares.png);
+    min-height: 230px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Metas-objetivos-content {
+    gap: 7px;
+    padding: 70px;
+    color: white;
+
+    h4 {
+        color: #ffc928;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    strong {
+        color: #ffc928;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+.boton {
+    display: inline-block;
+    background-color: #FFC928;
+    color: #0B1F3A;
+    padding: 14px 25px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid #FFC928;
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: #FFC928;
+    transform: scale(1.04);
+}
+.principal{
+    display: flex;
+}
