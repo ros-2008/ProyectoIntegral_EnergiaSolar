@@ -37,19 +37,27 @@ body {
     min-height: 100vh;
     background: linear-gradient(to right, #003f88, #FFFFFF);
     font-family: Arial, sans-serif;
+    padding: 20px; /* Evita que el formulario pegue contra los bordes en celulares */
 }
 
 .Caja2 {
-    width: 450px;
+    width: 100%;
+    max-width: 450px; /* Ancho ideal en PC, se adapta fluidamente en móviles */
     background-color: #041b3e;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 30px;
+    margin: 0 auto;
 }
 
 .Caja2_div1 {
     text-align: center;
     margin-bottom: 15px;
+}
+
+.Caja2_div1 img {
+    max-width: 100%;
+    height: auto;
 }
 
 .Caja2_div2 {
@@ -86,10 +94,10 @@ body {
 
 .Caja2_div3 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 16px; /* 16px previene zoom automático molesto en iPhone/Android */
 }
 
 /* BOTÓN PRINCIPAL (Regístrate / Iniciar Sesión) */
@@ -148,10 +156,33 @@ body {
     color: #041b3e;
 }
 
-/* RESPONSIVE PANTALLAS GRANDES */
+/* ==========================================================
+   RESPONSIVE PARA TABLETS Y MÓVILES (Ajustes de escala)
+========================================================== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .Caja2 {
+        padding: 20px 15px;
+    }
+
+    .Caja2_div2 {
+        font-size: 19px;
+    }
+
+    .Caja2_div3 {
+        padding: 15px;
+    }
+}
+
+/* ==========================================================
+   RESPONSIVE PANTALLAS GRANDES
+========================================================== */
 @media (min-width: 2000px) {
     .Caja2 {
-        width: 722px;
+        max-width: 722px;
         padding: 60px 40px;
     }
 
@@ -160,8 +191,7 @@ body {
     }
 
     .Caja2_div1 img {
-        width: 400px;
-        height: auto;
+        max-width: 400px;
     }
 
     .Caja2_div2 {
@@ -195,26 +225,5 @@ body {
 
     .Caja2_div5 button {
         font-size: 25px;
-    }
-}
-
-/* RESPONSIVE MÓVIL */
-@media (max-width: 480px) {
-    .Caja2 {
-        width: 92%;
-        max-width: 100%;
-        padding: 20px;
-        margin: 0 auto;
-    }
-
-    .Caja2_div1 img {
-        width: 100%;
-        max-width: 180px;
-        height: auto;
-    }
-
-    .Caja2_div3 input {
-        padding: 12px;
-        font-size: 16px;
     }
 }
