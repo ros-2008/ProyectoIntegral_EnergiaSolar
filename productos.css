@@ -11,7 +11,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: #111111;
+    color: #0B1F3A;
     background-color: #ffffff;
     width: 100%;
     overflow-x: hidden;
@@ -26,64 +26,411 @@ a {
     text-decoration: none;
 }
 
+
+/* NAVEGACIÓN */
+
 .navbar {
     width: 100%;
-    min-height: 90px;
-    padding: 10px 6%;
-    background-color: #0b1f3a;
+    min-height: 75px;
+    padding: 8px 5%;
+    background-color: #041E38;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
+    gap: 20px;
     position: relative;
     z-index: 10;
 }
 
 .logo img {
-    height: 75px;
-    width: auto;
+    width: 190px;
+    height: 55px;
     object-fit: contain;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
 }
 
 .nav-links a {
-    color: #ffffff;
-    font-size: 16px;
+    color: white;
+    font-size: 14px;
     font-weight: 600;
-    padding: 12px 18px;
-    border-radius: 6px;
+    padding: 12px 13px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+    color: #FFC928;
+    border-bottom: 2px solid #FFC928;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-quote {
+    background-color: #FFC928;
+    color: #0B1F3A;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav-quote i {
+    margin-left: 5px;
+}
+
+.nav-quote:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+.cart-button {
+    position: relative;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cart-button i {
+    margin-right: 5px;
+}
+
+.cart-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC928;
+    color: #0B1F3A;
+    font-weight: bold;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+
+/* PORTADA */
+
+.hero-productos {
+    width: 100%;
+    min-height: 285px;
+
+    background-image:
+        linear-gradient(90deg, rgba(3, 27, 52, 0.98) 0%,
+        rgba(3, 27, 52, 0.85) 35%,
+        rgba(3, 27, 52, 0.10) 75%),
+        url("img/Amanecer entre montañas y paneles solares.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 35px 5%;
+    color: white;
+}
+
+.hero-content h4 {
+    color: #FFC928;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 strong {
+    color: #FFC928;
+}
+
+.hero-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background-color: #FFC928;
+    color: #0B1F3A;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #FFC928;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.activo {
-    color: #0B1F3A;
-    background-color: #FFC928;
+.boton i {
+    margin-left: 5px;
 }
 
-.nav-links a:hover,
-.nav-links a.activo {
-    color: #0B1F3A;
-    background-color: #FFC928;
+.boton:hover {
+    background-color: transparent;
+    color: #FFC928;
+    transform: translateY(-2px);
 }
+
+
+/* PRODUCTOS */
+
+.productos-section {
+    background-color: #F7F8FA;
+    padding: 20px 4.7% 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    display: block;
+    width: 140px;
+    height: 3px;
+    background-color: #FFC928;
+    margin: 0 auto 8px;
+}
+
+.section-title h2 {
+    color: #0B1F3A;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.section-title p {
+    font-size: 15px;
+    color: #263E5D;
+}
+
+
+/* TARJETAS */
+
+.principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.producto-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(11, 31, 58, 0.08);
+    transition: all 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(11, 31, 58, 0.15);
+}
+
+.producto-imagen {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.producto-card:hover .producto-imagen img {
+    transform: scale(1.05);
+}
+
+.producto-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+    min-height: 120px;
+}
+
+.producto-icon {
+    color: #0B1F3A;
+    font-size: 31px;
+    width: 45px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.producto-texto {
+    flex: 1;
+}
+
+.producto-texto h3 {
+    font-size: 16px;
+    color: #0B1F3A;
+    margin-bottom: 6px;
+}
+
+.producto-texto p {
+    color: #263E5D;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.producto-boton {
+    padding: 8px 18px;
+    min-width: 120px;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+
+/* BENEFICIOS */
+
+.beneficios {
+    width: 100%;
+    background-color: #041E38;
+    color: white;
+    padding: 18px 4.7% 25px;
+}
+
+.beneficios-linea {
+    display: block;
+    width: 55px;
+    height: 3px;
+    background-color: #FFC928;
+    margin-bottom: 7px;
+}
+
+.beneficios-contenido > h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.beneficios-contenido > h2 strong {
+    color: #FFC928;
+}
+
+.engasado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.beneficio {
+    text-align: center;
+    padding: 5px 15px;
+    border-right: 1px solid rgba(255,255,255,0.4);
+}
+
+.beneficio:last-child {
+    border-right: none;
+}
+
+.beneficio i {
+    color: #FFC928;
+    font-size: 39px;
+    margin-bottom: 8px;
+}
+
+.beneficio h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.beneficio p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+/* COTIZACIÓN */
+
+.cotizacion {
+    width: 100%;
+    min-height: 165px;
+    background-color: #041E38;
+
+    background-image:
+        linear-gradient(115deg, transparent 57%,
+        #FFC928 57%, #FFC928 59%, transparent 59%),
+        linear-gradient(90deg, #041E38 0%, #041E38 48%,
+        transparent 48%),
+        url("img/Amanecer entre montañas y paneles solares.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 20px 4.7%;
+}
+
+.cotizacion-texto {
+    color: white;
+    width: 65%;
+    position: relative;
+    z-index: 1;
+}
+
+.cotizacion-texto h4 {
+    color: #FFC928;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cotizacion-texto h2 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.cotizacion-texto h2 strong {
+    color: #FFC928;
+}
+
+.cotizacion-texto p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+
+/* FOOTER */
 
 .footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
-    background-color: #111111;
-    padding: 30px 6%;
+    gap: 20px;
+    background-color: #04172D;
+    padding: 20px 5%;
+    border-top: 1px solid rgba(255,255,255,0.15);
 }
 
 .footer-logo img {
-    width: 120px;
+    width: 190px;
     height: auto;
 }
 
@@ -92,12 +439,12 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 .footer-text a {
-    color: #DAD7CD;
-    font-size: 15px;
+    color: white;
+    font-size: 12px;
     transition: color 0.3s ease;
 }
 
@@ -105,66 +452,316 @@ a {
     color: #FFC928;
 }
 
-.footer>a img.instagram {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #FFC928;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: white;
+    transform: translateY(-3px);
 }
 
 .footer p {
     color: #DAD7CD;
-    font-size: 13px;
+    font-size: 10px;
+}
+
+
+/* CARRITO */
+
+.cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.cart-overlay.activo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    max-width: 90%;
+    height: 100vh;
+    background: white;
+    z-index: 21;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+}
+
+.cart-panel.activo {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-header h2 {
+    font-size: 22px;
+}
+
+.cart-header button {
+    border: none;
+    background: none;
+    font-size: 22px;
+    color: #0B1F3A;
+    cursor: pointer;
+}
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding-top: 15px;
+}
+
+.cart-empty {
+    color: #777;
     text-align: center;
+    margin-top: 40px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item h3 {
+    font-size: 14px;
+}
+
+.cart-item p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #555;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cart-controls button {
+    border: none;
+    background: #F0F2F5;
+    color: #0B1F3A;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.cart-controls button:hover {
+    background: #FFC928;
+}
+
+.cart-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.cart-footer p {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.cart-footer .boton {
     width: 100%;
 }
 
-.Metas-objetivos {
-    background-image: url(img/Amanecer\ entre\ montañas\ y\ paneles\ solares.png);
-    min-height: 230px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.Metas-objetivos-content {
-    gap: 7px;
-    padding: 70px;
-    color: white;
+/* TABLETS */
 
-    h4 {
-        color: #ffc928;
-        font-size: 30px;
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 10px 3%;
+        flex-wrap: wrap;
     }
 
-    h1 {
-        font-size: 60px;
+    .logo img {
+        width: 150px;
     }
 
-    strong {
-        color: #ffc928;
+    .nav-links {
+        gap: 3px;
     }
 
-    p {
-        font-size: 20px;
+    .nav-links a {
+        font-size: 12px;
+        padding: 10px 7px;
     }
-}
-.boton {
-    display: inline-block;
-    background-color: #FFC928;
-    color: #0B1F3A;
-    padding: 14px 25px;
-    margin-top: 10px;
-    border-radius: 30px;
-    font-weight: bold;
-    border: 2px solid #FFC928;
-    transition: all 0.3s ease;
+
+    .nav-quote {
+        padding: 10px 12px;
+        font-size: 11px;
+    }
+
+    .principal {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto-imagen {
+        height: 170px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
 }
 
-.boton:hover {
-    background-color: transparent;
-    color: #FFC928;
-    transform: scale(1.04);
-}
-.principal{
-    display: flex;
+
+/* MÓVILES */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    .nav-actions {
+        justify-content: center;
+    }
+
+    .hero-productos {
+        min-height: 300px;
+        background-position: 60% center;
+    }
+
+    .hero-content {
+        padding: 30px 6%;
+    }
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    .hero-content p br {
+        display: none;
+    }
+
+    .productos-section {
+        padding: 25px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 23px;
+    }
+
+    .section-title p {
+        font-size: 13px;
+    }
+
+    .principal {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .producto-imagen {
+        height: 190px;
+    }
+
+    .producto-info {
+        min-height: 120px;
+    }
+
+    .beneficios {
+        padding: 25px 5%;
+    }
+
+    .beneficios-contenido > h2 {
+        font-size: 22px;
+    }
+
+    .engasado {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .beneficio:nth-child(2) {
+        border-right: none;
+    }
+
+    .beneficio i {
+        font-size: 32px;
+    }
+
+    .cotizacion {
+        min-height: 210px;
+        background-position: 65% center;
+    }
+
+    .cotizacion-texto {
+        width: 100%;
+    }
+
+    .cotizacion-texto h2 {
+        font-size: 23px;
+    }
+
+    .footer {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-text {
+        gap: 15px;
+    }
+
+    .footer-text a {
+        font-size: 11px;
+    }
+
+    .footer p {
+        width: 100%;
+    }
+
 }

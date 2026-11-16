@@ -1,15 +1,23 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Productos | SolTech</title>
+
     <link rel="stylesheet" href="productos.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
+
+    <!-- NAVEGACIÓN -->
     <nav class="navbar">
+
         <a class="logo" href="inicio.html">
             <img src="img/Logo-Solari.png" alt="Logo SolTech">
         </a>
@@ -20,78 +28,376 @@
             <a href="metas-objetivos.html">Metas y Objetivos</a>
             <a href="productos.html" class="activo">Productos</a>
         </div>
+
+        <div class="nav-actions">
+
+            <button class="cart-button" onclick="toggleCart()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Carrito</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </button>
+
+            <a href="#cotizacion" class="nav-quote">
+                Solicita una cotización
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
     </nav>
 
-    <section class="Metas-objetivos">
-        <div class="Metas-objetivos-content">
+
+    <!-- PORTADA -->
+    <section class="hero-productos">
+
+        <div class="hero-content">
+
             <h4>NUESTROS PRODUCTOS</h4>
-            <h1>Soluciones solares para<br> <strong> cada necesidad</strong></h1>
-            <p>Descubre nuetra gama de productos diseñados para <br>
+
+            <h1>
+                Soluciones solares<br>
+                para <strong>cada necesidad</strong>
+            </h1>
+
+            <p>
+                Descubre nuestra gama de productos diseñados para<br>
                 aprovechar la energía del sol de manera eficiente y confiable.
             </p>
+
+            <a href="#productos" class="boton">
+                Cotiza tu sistema
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
         </div>
+
     </section>
 
-    <center>
-        <h1><strong>Nuestros productos</strong></h1>
-        <p>tecnología de vanguardia para un hogar y negocio más sostenible</p>
-    </center>
-    <div class="principal">
-        <div>
-            <div><img src="https://imgs.search.brave.com/TOUkkRQ8_Nj0KnT5uPysnlwyhPUM932QnshRXematPE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3LzU2LzEzLzcz/LzM2MF9GXzc1NjEz/NzM5MF9PTU1yTmFV/dXJMbk9KUXBUalFr/M0hIMGpybkpKclF2/Ty5qcGc" alt=""></div>
-            <div><img src="" alt="">
-                <h2>Paneles Solares</h2>
-                <p>Paneles de alta eficiencia para <br> máximo rendimiento.</p>
-                <button class="boton">Agregar al carrito</button>
-            </div>
-        </div>
-        <div>
-            <div><img src="img/inversor-solar.png" alt=""></div>
-            <div><img src="" alt="">
-                <h2>Inversores</h2>
-                <p>Convierte la energía solar en <br>
-                electricidad para tu hogar.</p>
-                <button class="boton">Agregar al carrito</button>
-            </div>
-        </div>
-        <div>
-            <div><img src="img/bateria.png" alt=""></div>
-            <div>
-                <img src="" alt="">
-                <h2>Baterías Solares</h2>
-                <p>Almacena tu energía y úsala <br>cuando la necesites.</p>
-                <button class="boton">Agregar al carrito</button>
-            </div>
-        </div>
-    </div>
 
-    <div class="principal">
-        <div>
-            <div><img src="img/estructura-solar.png" alt=""></div>
-            <div><img src="" alt="">
-            <h2>Estructuras de Montaje</h2>
-            <p>Instalación segura y resistente <br>para tus paneles.</p>
-            <button class="boton">Agregar al carrito</button>
+    <!-- PRODUCTOS -->
+    <section class="productos-section" id="productos">
+
+        <div class="section-title">
+
+            <span></span>
+
+            <h2>Nuestros Productos</h2>
+
+            <p>
+                Tecnología de vanguardia para un hogar y negocio más sostenible.
+            </p>
+
+        </div>
+
+
+        <div class="principal">
+
+            <!-- PRODUCTO 1 -->
+            <div class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/paneles-solares.png" alt="Paneles solares">
+                </div>
+
+                <div class="producto-info">
+
+                    <i class="fa-solid fa-table-cells-large producto-icon"></i>
+
+                    <div class="producto-texto">
+
+                        <h3>Paneles Solares</h3>
+
+                        <p>
+                            Paneles de alta eficiencia para máximo rendimiento.
+                        </p>
+
+                        <button class="boton producto-boton"
+                            onclick="agregarCarrito('Paneles Solares')">
+                            Agregar al carrito
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
             </div>
-        </div>
-        <div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt="">
-            <h2>Accesorios</h2>
-            <p>Todo lo que necesitas para una <br>
-            instalación completa.</p>
-            <button class="boton">Agregar al carrito</button>
+
+
+            <!-- PRODUCTO 2 -->
+            <div class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/inversor-solar.png" alt="Inversor solar">
+                </div>
+
+                <div class="producto-info">
+
+                    <i class="fa-solid fa-bolt producto-icon"></i>
+
+                    <div class="producto-texto">
+
+                        <h3>Inversores</h3>
+
+                        <p>
+                            Convierte la energía solar en electricidad para tu hogar.
+                        </p>
+
+                        <button class="boton producto-boton"
+                            onclick="agregarCarrito('Inversores')">
+                            Agregar al carrito
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
             </div>
+
+
+            <!-- PRODUCTO 3 -->
+            <div class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/bateria.png" alt="Baterías solares">
+                </div>
+
+                <div class="producto-info">
+
+                    <i class="fa-solid fa-car-battery producto-icon"></i>
+
+                    <div class="producto-texto">
+
+                        <h3>Baterías Solares</h3>
+
+                        <p>
+                            Almacena tu energía y úsala cuando la necesites.
+                        </p>
+
+                        <button class="boton producto-boton"
+                            onclick="agregarCarrito('Baterías Solares')">
+                            Agregar al carrito
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 4 -->
+            <div class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/estructura-solar.png" alt="Estructuras de montaje">
+                </div>
+
+                <div class="producto-info">
+
+                    <i class="fa-solid fa-wrench producto-icon"></i>
+
+                    <div class="producto-texto">
+
+                        <h3>Estructuras de Montaje</h3>
+
+                        <p>
+                            Instalación segura y resistente para tus paneles.
+                        </p>
+
+                        <button class="boton producto-boton"
+                            onclick="agregarCarrito('Estructuras de Montaje')">
+                            Agregar al carrito
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 5 -->
+            <div class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/cables-solar.png" alt="Accesorios solares">
+                </div>
+
+                <div class="producto-info">
+
+                    <i class="fa-solid fa-plug producto-icon"></i>
+
+                    <div class="producto-texto">
+
+                        <h3>Accesorios</h3>
+
+                        <p>
+                            Todo lo que necesitas para una instalación completa.
+                        </p>
+
+                        <button class="boton producto-boton"
+                            onclick="agregarCarrito('Accesorios')">
+                            Agregar al carrito
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 6 -->
+            <div class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/controlador-carga.png" alt="Controlador de carga">
+                </div>
+
+                <div class="producto-info">
+
+                    <i class="fa-solid fa-gear producto-icon"></i>
+
+                    <div class="producto-texto">
+
+                        <h3>Controladores de Carga</h3>
+
+                        <p>
+                            Gestiona la energía de tu sistema con total control.
+                        </p>
+
+                        <button class="boton producto-boton"
+                            onclick="agregarCarrito('Controladores de Carga')">
+                            Agregar al carrito
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt="">
-            <h2>Controladores de Carga</h2>
-            <p>Gestiona la energía de tu sistema <br>con total control.</p>
-            <button class="boton">Agregar al carrito</button>
+
+    </section>
+
+    <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+    <aside class="cart-panel" id="cart-panel">
+
+        <div class="cart-header">
+
+            <h2>Mi carrito</h2>
+
+            <button onclick="toggleCart()" aria-label="Cerrar carrito">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
         </div>
+
+        <div id="cart-items" class="cart-items">
+            <p class="cart-empty">Tu carrito está vacío.</p>
         </div>
-    </div>
+
+        <div class="cart-footer">
+
+            <p id="cart-total">Productos seleccionados: 0</p>
+
+            <button class="boton" onclick="solicitarCotizacion()">
+                Solicitar cotización
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <section class="beneficios" id="beneficios">
+
+        <div class="beneficios-contenido">
+
+            <span class="beneficios-linea"></span>
+
+            <h2>
+                ¿Por qué elegir <strong>SolTech</strong>?
+            </h2>
+
+            <div class="engasado">
+
+                <div class="beneficio">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <h3>Alta Calidad</h3>
+
+                    <p>Productos confiables<br>y duraderos</p>
+
+                </div>
+
+                <div class="beneficio">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <h3>Energía Limpia</h3>
+
+                    <p>Cuida el planeta</p>
+
+                </div>
+
+                <div class="beneficio">
+
+                    <i class="fa-solid fa-piggy-bank"></i>
+
+                    <h3>Ahorro Real</h3>
+
+                    <p>Reduce tu factura<br>de electricidad</p>
+
+                </div>
+
+                <div class="beneficio">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <h3>Soporte Experto</h3>
+
+                    <p>Te acompañamos en<br>todo el proceso</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cotizacion" id="cotizacion">
+
+        <div class="cotizacion-texto">
+
+            <h4>LISTO PARA EMPEZAR</h4>
+
+            <h2>
+                ¡Cotiza hoy tu <strong>sistema solar!</strong>
+            </h2>
+
+            <p>Da el primer paso hacia un futuro más brillante.
+            </p>
+
+            <a href="mailto:contacto@soltech.com" class="boton">
+                Solicita una cotización
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
 
     <footer class="footer">
 
@@ -100,22 +406,37 @@
         </a>
 
         <div class="footer-text">
+
             <a href="inicio.html">Inicio</a>
             <a href="conocenos.html">Conócenos</a>
-            <a href="metas-objetivos.html">Metas y Objetivos</a>
+            <a href="productos.html">Productos</a>
             <a href="#servicios">Servicios</a>
             <a href="#beneficios">Beneficios</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#cotizacion">Contacto</a>
+
         </div>
 
-        <a href="https://www.instagram.com/solte.chgt/" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png" alt="Instagram" class="instagram">
-        </a>
+        <div class="footer-social">
+
+            <a href="https://www.instagram.com/solte.chgt/"
+                target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
 
         <p>© 2026 SolTech. Todos los derechos reservados.</p>
 
     </footer>
+    <script src="productos.js"></script>
 
 </body>
-
 </html>
