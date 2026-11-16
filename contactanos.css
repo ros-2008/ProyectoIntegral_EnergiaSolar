@@ -1,8 +1,3 @@
-
-/* =========================
-   CONFIGURACIÓN GENERAL
-========================= */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,12 +26,7 @@ a {
     text-decoration: none;
 }
 
-
-/* =========================
-   NAVEGACIÓN
-========================= */
-
-.navbar {
+.caja1 {
     width: 100%;
     min-height: 90px;
     padding: 10px 6%;
@@ -49,19 +39,19 @@ a {
     z-index: 10;
 }
 
-.logo img {
+.caja2 img {
     height: 75px;
     width: auto;
     object-fit: contain;
 }
 
-.nav-links {
+.caja3 {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.nav-links a {
+.caja3 a {
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
@@ -70,318 +60,487 @@ a {
     transition: all 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.activo {
-    color: #0B1F3A;
-    background-color: #FFC928;
+.caja3 a:hover,
+.caja3 a.activo {
+    color: #0b1f3a;
+    background-color: #ffc928;
 }
 
-
-/* =========================
-   PORTADA PRINCIPAL
-========================= */
-
-.contenido {
-    position: relative;
-    min-height: 540px;
-    padding: 70px 8%;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    isolation: isolate;
-    background-color: #0B1F3A;
+.caja4 {
+    background-image: url(img/panel-fondo1.png);
+    min-height: 230px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.carrusel {
-    position: absolute;
-    inset: 0;
-    z-index: -2;
+.caja5 {
+    padding: 70px 6%;
+    color: white;
 }
 
-.carrusel::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        90deg,
-        rgba(11, 31, 58, 0.92),
-        rgba(11, 31, 58, 0.65),
-        rgba(11, 31, 58, 0.25)
-    );
-}
-
-.carrusel img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-.carrusel img.activo {
-    opacity: 1;
-}
-
-.contenido-content {
-    position: relative;
-    z-index: 1;
-    max-width: 650px;
-    color: #ffffff;
-}
-
-.contenido-content h1 {
-    color: #FFC928;
-    font-size: 20px;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-}
-
-.contenido-content h2 {
-    color: #ffffff;
-    font-size: clamp(35px, 5vw, 58px);
-    line-height: 1.15;
-    margin-bottom: 20px;
-}
-
-.contenido-content h2 strong {
-    color: #FFC928;
-}
-
-.contenido-content .content {
-    color: #ffffff;
+.caja5 h4 {
+    color: #ffc928;
     font-size: 18px;
-    line-height: 1.7;
-    max-width: 520px;
-    margin-bottom: 25px;
 }
 
+.caja5 h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
 
-/* =========================
-   BOTONES
-========================= */
+.caja5 strong {
+    color: #ffc928;
+}
+
+.caja5 p {
+    font-size: 15px;
+}
 
 .boton {
     display: inline-block;
-    background-color: #FFC928;
-    color: #0B1F3A;
+    background-color: #ffc928;
+    color: #0b1f3a;
     padding: 14px 25px;
     margin-top: 10px;
     border-radius: 30px;
     font-weight: bold;
-    border: 2px solid #FFC928;
+    border: 2px solid #ffc928;
     transition: all 0.3s ease;
 }
 
 .boton:hover {
     background-color: transparent;
-    color: #FFC928;
+    color: #d9a21b;
     transform: scale(1.04);
 }
 
-
-/* =========================
-   PIE DE PÁGINA
-========================= */
-
-.footer {
-    display: flex;
-    flex-wrap: wrap;
+.caja6 {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1.4fr;
+    gap: 30px;
     align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-    background-color: #111111;
-    padding: 30px 6%;
+    padding: 40px 6%;
+    background-color: #f7f7f8;
 }
 
-.footer-logo img {
-    width: 120px;
-    height: auto;
+.caja7 h4 {
+    color: #d9a21b;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
-.footer-text {
+.caja7 h2 {
+    color: #0b1f3a;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.caja8 {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+}
+
+.caja9 {
+    width: 55px;
+    height: 55px;
+    background-color: #ffc928;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    font-size: 24px;
+    flex-shrink: 0;
 }
 
-.footer-text a {
-    color: #DAD7CD;
-    font-size: 15px;
-    transition: color 0.3s ease;
+.caja8 strong {
+    color: #0b1f3a;
 }
 
-.footer-text a:hover {
-    color: #FFC928;
+.caja10 {
+    text-align: center;
 }
 
-.footer > a img.instagram {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+.caja10 img {
+    margin: 0 auto 15px;
+    max-width: 220px;
 }
 
-.footer p {
-    color: #DAD7CD;
-    font-size: 13px;
+.caja10 p {
+    font-style: italic;
+    color: #0b1f3a;
+    font-size: 18px;
+}
+
+.caja11 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.caja11 h2 {
+    color: #0b1f3a;
+    font-size: 26px;
+}
+
+.caja11 p {
+    color: #0b1f3a;
+    margin-bottom: 20px;
+}
+
+.caja12 {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.caja11 input,
+.caja11 textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.caja11 textarea {
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.caja11 .boton {
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.caja13 {
+    display: grid;
+    grid-template-columns: 1fr 170px 1.2fr;
+    align-items: center;
+    gap: 25px 30px;
+    padding: 35px 6%;
+    background-color: #f7f7f8;
+}
+
+.caja14 h4 {
+    color: #d9a21b;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.caja14 h2 {
+    color: #0b1f3a;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.caja15 {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 25px;
     text-align: center;
     width: 100%;
 }
 
+.caja15 img {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    object-fit: contain;
+}
 
-/* =========================
-   TABLETS
-========================= */
+.caja15 h3 {
+    color: #0b1f3a;
+    margin-bottom: 8px;
+}
 
-@media screen and (max-width: 1000px) {
+.caja15 p {
+    color: #444444;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
 
-    .centrar {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+.caja15 .boton {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.caja16 {
+    width: 170px;
+    max-width: 170px;
+    height: auto;
+    justify-self: center;
+}
+
+.caja17 {
+    width: 100%;
+    height: 340px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.caja17 iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.caja18 {
+    grid-column: 1 / -1;
+    justify-self: center;
+    background-color: #0b1f3a;
+    color: #ffffff;
+    padding: 14px 30px;
+    border-radius: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.caja18 strong {
+    color: #ffc928;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .caja1 {
+        padding: 10px 4%;
     }
 
-    .content-cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .caja3 {
+        gap: 5px;
     }
 
-    .div1 {
-        gap: 30px;
+    .caja3 a {
+        padding: 10px 12px;
+        font-size: 15px;
     }
 
-    .footer {
-        justify-content: center;
+    .caja5 h4 {
+        font-size: 18px;
+    }
+
+    .caja5 h1 {
+        font-size: 55px;
+    }
+
+    .caja5 p {
+        font-size: 15px;
     }
 }
 
+@media screen and (max-width: 800px) {
 
-/* =========================
-   CELULARES
-========================= */
-
-@media screen and (max-width: 650px) {
-
-    .navbar {
+    .caja1 {
         flex-direction: column;
-        justify-content: center;
         gap: 10px;
         padding: 15px;
     }
 
-    .logo img {
-        height: 60px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
+    .caja3 {
         justify-content: center;
-        gap: 5px;
+        flex-wrap: wrap;
     }
 
-    .nav-links a {
+    .caja5 {
+        padding: 50px 6%;
+    }
+
+    .caja5 h4 {
+        font-size: 16px;
+    }
+
+    .caja5 h1 {
+        font-size: 42px;
+    }
+
+    .caja5 p {
+        font-size: 15px;
+    }
+
+    .caja5 p br {
+        display: none;
+    }
+
+    .caja6 {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 35px 6%;
+    }
+
+    .caja7,
+    .caja11 {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .caja10 {
+        order: 3;
+    }
+
+    .caja10 img {
+        max-width: 180px;
+    }
+
+    .caja13 {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+        padding: 35px 6%;
+    }
+
+    .caja17 {
+        height: 300px;
+    }
+
+    .caja14 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja16 {
+        width: 200px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .caja15 {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .caja2 img {
+        height: 55px;
+    }
+
+    .caja3 a {
         font-size: 13px;
         padding: 9px 10px;
     }
 
-    .contenido {
-        min-height: 450px;
-        padding: 35px 20px;
-    }
-
-    .contenido-content h1 {
-        font-size: 16px;
-    }
-
-    .contenido-content h2 {
-        font-size: 34px;
-    }
-
-    .contenido-content .content {
-        font-size: 16px;
-    }
-
-    .contenedor {
-        padding: 25px 15px;
-    }
-
-    .centrar {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .beneficio {
-        padding: 20px 10px;
-    }
-
-    .beneficio img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .div1 {
-        grid-template-columns: 1fr;
-        padding: 35px 20px;
-    }
-
-    .div1-contenido h2 {
-        font-size: 29px;
-    }
-
-    .div1-contenido p {
-        font-size: 15px;
-    }
-
-    .centra {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card1-content {
-        border-right: none;
-        border-bottom: 1px solid #29445A;
-    }
-
-    .card1-content h2 {
-        font-size: 28px;
-    }
-
-    .text1-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .text1 h1 {
-        font-size: 28px;
-    }
-
-    .text2 {
-        font-size: 16px;
-    }
-
-    .content-text {
-        padding: 35px 20px;
-    }
-
-    .content-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .contenido2 {
-        padding: 35px 20px;
-    }
-
-    .contenido2 h1 {
-        font-size: 29px;
-    }
-
-    .footer {
-        flex-direction: column;
+    .caja5 {
+        padding: 40px 20px;
         text-align: center;
     }
 
-    .footer-text {
+    .caja5 h4 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .caja5 h1 {
+        font-size: 32px;
+    }
+
+    .caja5 p {
+        font-size: 14px;
+    }
+
+    .caja6 {
+        padding: 30px 15px;
+    }
+
+    .caja7 h4 {
+        font-size: 14px;
+    }
+
+    .caja7 h2 {
+        font-size: 24px;
+    }
+
+    .caja8 {
+        padding: 10px 12px;
+        gap: 12px;
+    }
+
+    .caja9 {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .caja8 p {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .caja11 {
+        padding: 20px;
+    }
+
+    .caja11 h2 {
+        font-size: 22px;
+    }
+
+    .caja11 p {
+        font-size: 15px;
+    }
+
+    .caja12 {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
+    }
+
+    .caja11 input,
+    .caja11 textarea {
+        padding: 13px;
+    }
+
+    .caja11 .boton {
+        font-size: 16px;
+        padding: 13px;
+    }
+
+    .caja13 {
+        padding: 30px 15px;
+    }
+
+    .caja17 {
+        height: 250px;
+    }
+
+    .caja18 {
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+
+    .caja14 h2 {
+        font-size: 24px;
+    }
+
+    .caja15 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .caja16 {
+        max-width: 170px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .caja5 h1 {
+        font-size: 28px;
+    }
+
+    .caja3 a {
+        font-size: 12px;
+        padding: 8px;
     }
 }
