@@ -98,7 +98,7 @@
             <div class="producto-card">
 
                 <div class="producto-imagen">
-                    <img src="img/paneles-solares.png" alt="Paneles solares">
+                    <img src="img/panel-fondo.png" alt="Paneles solares">
                 </div>
 
                 <div class="producto-info">
@@ -113,8 +113,10 @@
                             Paneles de alta eficiencia para máximo rendimiento.
                         </p>
 
+                        <h4 class="precio">Q1,250.00</h4>
+
                         <button class="boton producto-boton"
-                            onclick="agregarCarrito('Paneles Solares')">
+                            onclick="agregarCarrito('Paneles Solares', 1250)">
                             Agregar al carrito
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -145,8 +147,10 @@
                             Convierte la energía solar en electricidad para tu hogar.
                         </p>
 
+                        <h4 class="precio">Q2,800.00</h4>
+
                         <button class="boton producto-boton"
-                            onclick="agregarCarrito('Inversores')">
+                            onclick="agregarCarrito('Inversores', 2800)">
                             Agregar al carrito
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -177,8 +181,10 @@
                             Almacena tu energía y úsala cuando la necesites.
                         </p>
 
+                        <h4 class="precio">Q3,500.00</h4>
+
                         <button class="boton producto-boton"
-                            onclick="agregarCarrito('Baterías Solares')">
+                            onclick="agregarCarrito('Baterías Solares', 3500)">
                             Agregar al carrito
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -209,8 +215,10 @@
                             Instalación segura y resistente para tus paneles.
                         </p>
 
+                        <h4 class="precio">Q850.00</h4>
+
                         <button class="boton producto-boton"
-                            onclick="agregarCarrito('Estructuras de Montaje')">
+                            onclick="agregarCarrito('Estructuras de Montaje', 850)">
                             Agregar al carrito
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -241,8 +249,10 @@
                             Todo lo que necesitas para una instalación completa.
                         </p>
 
+                        <h4 class="precio">Q350.00</h4>
+
                         <button class="boton producto-boton"
-                            onclick="agregarCarrito('Accesorios')">
+                            onclick="agregarCarrito('Accesorios', 350)">
                             Agregar al carrito
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -273,8 +283,10 @@
                             Gestiona la energía de tu sistema con total control.
                         </p>
 
+                        <h4 class="precio">Q650.00</h4>
+
                         <button class="boton producto-boton"
-                            onclick="agregarCarrito('Controladores de Carga')">
+                            onclick="agregarCarrito('Controladores de Carga', 650)">
                             Agregar al carrito
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -289,8 +301,12 @@
 
     </section>
 
+
+    <!-- FONDO DEL CARRITO -->
     <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
 
+
+    <!-- CARRITO -->
     <aside class="cart-panel" id="cart-panel">
 
         <div class="cart-header">
@@ -309,10 +325,13 @@
 
         <div class="cart-footer">
 
-            <p id="cart-total">Productos seleccionados: 0</p>
+            <p id="cart-quantity">Productos seleccionados: 0</p>
 
-            <button class="boton">
+            <p id="cart-total">Total: Q0.00</p>
+
+            <button class="boton" onclick="solicitarCotizacion()">
                 Solicitar cotización
+                <i class="fa-solid fa-arrow-right"></i>
             </button>
 
         </div>
@@ -320,6 +339,7 @@
     </aside>
 
 
+    <!-- BENEFICIOS -->
     <section class="beneficios" id="beneficios">
 
         <div class="beneficios-contenido">
@@ -378,6 +398,8 @@
 
     </section>
 
+
+    <!-- COTIZACIÓN -->
     <section class="cotizacion" id="cotizacion">
 
         <div class="cotizacion-texto">
@@ -388,7 +410,8 @@
                 ¡Cotiza hoy tu <strong>sistema solar!</strong>
             </h2>
 
-            <p>Da el primer paso hacia un futuro más brillante.
+            <p>
+                Da el primer paso hacia un futuro más brillante.
             </p>
 
             <a href="mailto:contacto@soltech.com" class="boton">
@@ -401,6 +424,7 @@
     </section>
 
 
+    <!-- FOOTER -->
     <footer class="footer">
 
         <a href="inicio.html" class="footer-logo">
@@ -438,6 +462,8 @@
         <p>© 2026 SolTech. Todos los derechos reservados.</p>
 
     </footer>
+
+
     <script src="productos.js"></script>
 
 </body>
