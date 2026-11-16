@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -299,6 +300,15 @@ a {
     margin-bottom: 10px;
 }
 
+/* PRECIOS DE LOS PRODUCTOS */
+
+.precio {
+    color: #0B1F3A;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .producto-boton {
     padding: 8px 18px;
     min-width: 120px;
@@ -590,6 +600,19 @@ a {
 .cart-footer p {
     font-weight: bold;
     margin-bottom: 12px;
+}
+
+/* TOTAL DEL CARRITO */
+
+.cart-footer #cart-quantity {
+    color: #555;
+    font-size: 13px;
+}
+
+.cart-footer #cart-total {
+    color: #0B1F3A;
+    font-size: 21px;
+    font-weight: bold;
 }
 
 .cart-footer .boton {
