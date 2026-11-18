@@ -253,17 +253,46 @@
                 hacia un futuro más sostenible.
             </p>
 
-            <a href="https://www.instagram.com/solte.chgt/"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="boton">
+            <a href="https://www.instagram.com/solte.chgt/" target="_blank" rel="noopener noreferrer" class="boton">
                 Solicita tu cotización →
             </a>
 
         </div>
 
     </section>
+    <script>
+        localStorage.removeItem('conversationIdInfo');
+        window.difyChatbotConfig = {
+            token: 'cLyvxLPdxic33GrJ',
+            baseUrl: 'https://udify.app',
+            inputs: {
+                // You can define the inputs from the Start node here
+                // key is the variable name
+                // e.g.
+                // name: "NAME"
+            },
+            systemVariables: {
+                // user_id: 'YOU CAN DEFINE USER ID HERE',
+                // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+            },
+            userVariables: {
+                user_id: 'padre_' + Math.random().toString(36).substring(2, 9)
+            },
+        }
+    </script>
+    <script src="https://udify.app/embed.min.js" id="cLyvxLPdxic33GrJ" defer>
+    </script>
+    <style>
+        #dify-chatbot-bubble-button {
+            background-color: #1C64F2 !important;
+        }
 
+        #dify-chatbot-bubble-window {
+            width: 24rem !important;
+            height: 40rem !important;
+        }
+    </style>
+    <script src="inicio.js"></script>
     <!-- PIE DE PÁGINA -->
     <footer class="footer">
 
@@ -280,19 +309,16 @@
             <a href="#contacto">Contacto</a>
         </div>
 
-        <a href="https://www.instagram.com/solte.chgt/"
-           target="_blank"
-           rel="noopener noreferrer">
-            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png"
-                 alt="Instagram"
-                 class="instagram">
+        <a href="https://www.instagram.com/solte.chgt/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png" alt="Instagram" class="instagram">
         </a>
 
         <p>© 2026 SolTech. Todos los derechos reservados.</p>
 
     </footer>
 
-    <script src="inicio.js"></script>
+
 
 </body>
+
 </html>

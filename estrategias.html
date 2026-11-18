@@ -186,6 +186,38 @@
 
     </main>
 
+<script>
+        window.difyChatbotConfig = {
+            token: 'cLyvxLPdxic33GrJ',
+            baseUrl: 'https://udify.app',
+            inputs: {
+                // You can define the inputs from the Start node here
+                // key is the variable name
+                // e.g.
+                // name: "NAME"
+            },
+            systemVariables: {
+                // user_id: 'YOU CAN DEFINE USER ID HERE',
+                // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+            },
+            userVariables: {
+                user_id: 'padre_' + Math.random().toString(36).substring(2, 9)
+            },
+        }
+    </script>
+    <script src="https://udify.app/embed.min.js" id="cLyvxLPdxic33GrJ" defer>
+    </script>
+    <style>
+        #dify-chatbot-bubble-button {
+            background-color: #1C64F2 !important;
+        }
+
+        #dify-chatbot-bubble-window {
+            width: 24rem !important;
+            height: 40rem !important;
+        }
+    </style>
+
     <!-- PIE DE PAGINA -->
     <footer class="footer">
         <p>© 2026 SolTech | Energía solar para un futuro sostenible.</p>

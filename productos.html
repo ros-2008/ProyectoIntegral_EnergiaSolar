@@ -110,7 +110,7 @@
                         <h3>Paneles Solares</h3>
 
                         <p>
-                            Paneles de alta eficiencia para máximo rendimiento.
+                            Paneles de alta eficiencia para un máximo rendimiento.
                         </p>
 
                         <h4 class="precio">Q1,250.00</h4>
@@ -128,7 +128,6 @@
             </div>
 
 
-            <!-- PRODUCTO 2 -->
             <div class="producto-card">
 
                 <div class="producto-imagen">
@@ -423,6 +422,37 @@
 
     </section>
 
+<script>
+        window.difyChatbotConfig = {
+            token: 'cLyvxLPdxic33GrJ',
+            baseUrl: 'https://udify.app',
+            inputs: {
+                // You can define the inputs from the Start node here
+                // key is the variable name
+                // e.g.
+                // name: "NAME"
+            },
+            systemVariables: {
+                // user_id: 'YOU CAN DEFINE USER ID HERE',
+                // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+            },
+            userVariables: {
+                user_id: 'padre_' + Math.random().toString(36).substring(2, 9)
+            },
+        }
+    </script>
+    <script src="https://udify.app/embed.min.js" id="cLyvxLPdxic33GrJ" defer>
+    </script>
+    <style>
+        #dify-chatbot-bubble-button {
+            background-color: #1C64F2 !important;
+        }
+
+        #dify-chatbot-bubble-window {
+            width: 24rem !important;
+            height: 40rem !important;
+        }
+    </style>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -449,21 +479,13 @@
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <a href="#" aria-label="Facebook">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
-            <a href="#" aria-label="YouTube">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-
         </div>
 
         <p>© 2026 SolTech. Todos los derechos reservados.</p>
 
     </footer>
 
-
+    
     <script src="productos.js"></script>
 
 </body>
