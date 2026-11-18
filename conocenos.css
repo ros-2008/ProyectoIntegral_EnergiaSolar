@@ -1,5 +1,4 @@
 
-/* COLORES */
 :root {
     --azul: #0B1F3A;
     --amarillo: #FFC928;
@@ -8,7 +7,7 @@
     --gris: #F4F5F7;
 }
 
-/* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,19 +19,19 @@ body {
     background: var(--gris);
     color: var(--negro);
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
-/* NAVEGACION */
+
 .navbar {
     width: 100%;
     min-height: 90px;
     background: var(--azul);
     padding: 10px 6%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    gap: 20px;
     border-bottom: 4px solid var(--amarillo);
 }
 
@@ -60,11 +59,9 @@ body {
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-
-    padding: 12px 18px;
+    padding: 12px 16px;
     border-radius: 5px;
     white-space: nowrap;
-
     transition: background-color 0.2s, color 0.2s;
 }
 
@@ -72,6 +69,19 @@ body {
 .nav-links a.activo {
     background: var(--amarillo);
     color: var(--azul);
+}
+
+.nav-links a.btn-cerrar-sesion {
+    background-color: #d9534f;
+    color: var(--blanco);
+    border: 1px solid #d9534f;
+    margin-left: 8px;
+}
+
+.nav-links a.btn-cerrar-sesion:hover {
+    background-color: #b52b27;
+    border-color: #b52b27;
+    color: var(--blanco);
 }
 
 /* CONTENIDO */
@@ -115,7 +125,7 @@ body {
     font-size: 17px;
 }
 
-/* MISION Y VISION */
+/* MISIÓN Y VISIÓN */
 .presentacion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -173,6 +183,8 @@ body {
     border: 1px solid #D5D9DF;
     border-bottom: 4px solid var(--amarillo);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     transition: background-color 0.2s;
 }
 
@@ -189,6 +201,13 @@ body {
 .valor p {
     color: var(--negro);
     font-size: 15px;
+}
+
+.valor img {
+    display: block;
+    margin: auto auto 0 auto;
+    padding-top: 20px;
+    object-fit: contain;
 }
 
 /* HOVER */
@@ -214,18 +233,28 @@ body {
     border-top: 4px solid var(--amarillo);
 }
 
-/* RESPONSIVE */
-@media (max-width: 800px) {
+
+@media (max-width: 1050px) {
 
     .navbar {
         flex-direction: column;
-        gap: 10px;
-        padding: 15px;
+        gap: 14px;
+        padding: 16px 4%;
     }
 
     .nav-links {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .nav-links a.btn-cerrar-sesion {
+        margin-left: 0;
     }
 
     .presentacion {
@@ -236,6 +265,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 
 @media (max-width: 550px) {
 

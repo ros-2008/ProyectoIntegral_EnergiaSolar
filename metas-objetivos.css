@@ -66,8 +66,21 @@ a {
     background-color: #FFC928;
 }
 
+.nav-links a.btn-cerrar-sesion {
+    background-color: #d9534f;
+    color: #ffffff;
+    border: 1px solid #d9534f;
+    margin-left: 10px;
+}
+
+.nav-links a.btn-cerrar-sesion:hover {
+    background-color: #b52b27;
+    border-color: #b52b27;
+    color: #ffffff;
+}
+
 .Metas-objetivos {
-    background-image: url(img/Amanecer\ entre\ montañas\ y\ paneles\ solares.png);
+    background-image: url("img/Amanecer entre montañas y paneles solares.png");
     min-height: 230px;
     background-size: cover;
     background-position: center;
@@ -75,11 +88,11 @@ a {
 }
 
 .content {
-    border: 2px solid;
-    border-color: #f4f5f7b4;
+    border: 2px solid #f4f5f7b4;
     border-radius: 20px;
-    width: auto;
+    width: 100%;
     display: flex;
+    align-items: center;
     padding: 30px;
     background-color: #eff2f7;
 }
@@ -90,25 +103,26 @@ a {
     font-weight: 500;
     padding: 25px;
     background-color: white;
-    border: 2px solid;
-    border-color: #f4f5f7b4;
+    border: 2px solid #f4f5f7b4;
     border-radius: 20px;
     width: fit-content;
-    margin-top: 60px;
+    margin-top: 52px;
+}
 
-    h2 {
-        font-size: 20px;
-        font-weight: bold;
-    }
+.content-content h2 {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .content-ton {
     color: #0B1F3A;
     font-size: 20px;
     font-weight: 500;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-right: 0 !important;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 #content-contentt {
@@ -116,31 +130,29 @@ a {
 }
 
 .content-contentt {
-    p {
-        font-size: 20px;
-    }
-
     color: #0B1F3A;
     padding: 15px;
     background-color: #f4f5f7b4;
-    border: 2px solid;
-    border-color: #f4f5f7b4;
+    border: 2px solid #f4f5f7b4;
     border-radius: 20px;
     width: fit-content;
     margin-top: 0px;
-    margin-right: 50px;
+    margin-right: 30px;
+}
 
-    h2 {
-        font-size: 20px;
-        font-weight: bold;
-    }
+.content-contentt p {
+    font-size: 20px;
+}
+
+.content-contentt h2 {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .content2 {
     background-color: white;
     padding: 15px;
-    border: 2px solid;
-    border-color: #f4f5f7b4;
+    border: 2px solid #f4f5f7b4;
     border-radius: 20px;
 }
 
@@ -148,36 +160,18 @@ a {
     font-weight: bold;
     width: fit-content;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
-#contenti {
-    padding: 25px;
-    background-color: white;
-    border: 2px solid;
-    border-color: #f4f5f7b4;
-    border-radius: 20px;
-    width: fit-content;
-    height: 350px;
-}
-
-.contenti {
-    padding: 25px;
-    background-color: white;
-    border: 2px solid;
-    border-color: #f4f5f7b4;
-    border-radius: 20px;
-    width: fit-content;
-    height: 350px;
-}
-
+#contenti,
+.contenti,
 .contenti1 {
     padding: 25px;
     background-color: white;
-    border: 2px solid;
-    border-color: #f4f5f7b4;
+    border: 2px solid #f4f5f7b4;
     border-radius: 20px;
     width: fit-content;
-    height: 300px;
+    min-height: 300px;
 }
 
 .contenedor {
@@ -185,14 +179,11 @@ a {
 }
 
 .contenedor1 {
-    border-left: 3px solid;
-    border-color: #FFC928;
+    border-left: 3px solid #FFC928;
     display: flex;
+    align-items: stretch;
+    gap: 25px;
     margin: 0;
-
-    div {
-        margin-right: 60px;
-    }
 }
 
 .content h3 {
@@ -200,9 +191,10 @@ a {
     font-weight: bold;
     background-color: #FFC928;
     color: #0B1F3A;
-    padding: 10px;
+    padding: 10px 18px;
     width: fit-content;
     margin-top: 0px;
+    margin-bottom: 12px;
     border-radius: 30px;
     transition: all 0.3s ease;
 }
@@ -211,23 +203,23 @@ a {
     gap: 7px;
     padding: 70px;
     color: white;
+}
 
-    h4 {
-        color: #ffc928;
-        font-size: 30px;
-    }
+.Metas-objetivos-content h4 {
+    color: #ffc928;
+    font-size: 30px;
+}
 
-    h1 {
-        font-size: 60px;
-    }
+.Metas-objetivos-content h1 {
+    font-size: 60px;
+}
 
-    strong {
-        color: #ffc928;
-    }
+.Metas-objetivos-content strong {
+    color: #ffc928;
+}
 
-    p {
-        font-size: 20px;
-    }
+.Metas-objetivos-content p {
+    font-size: 20px;
 }
 
 .footer {
@@ -264,7 +256,7 @@ a {
     color: #FFC928;
 }
 
-.footer>a img.instagram {
+.footer > a img.instagram {
     width: 40px;
     height: 40px;
     object-fit: contain;
@@ -278,6 +270,7 @@ a {
 }
 
 .boton {
+    display: inline-block;
     background-color: #FFC928;
     color: #0B1F3A;
     padding: 15px 25px;
@@ -290,6 +283,7 @@ a {
 
 .boton:hover {
     background-color: white;
+    color: #0B1F3A;
     transform: scale(1.05);
 }
 
@@ -298,10 +292,10 @@ a {
 }
 
 .contenido2 {
-    background-image: url(img/icono.png);
+    background-image: url("img/icono.png");
     min-height: 230px;
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -324,25 +318,28 @@ a {
     padding: 30px;
     margin-left: 60px;
 }
-@media (min-width: 901px) and (max-width: 1500px) {
 
+/* =========================
+   PANTALLAS MEDIANAS / LAPTOP
+========================= */
+@media (max-width: 1450px) {
     .content {
         flex-wrap: wrap;
-        align-items: flex-start;
+        justify-content: center;
         gap: 20px;
     }
 
     .content-contentt,
     #content-contentt {
         flex: 1;
-        min-width: 300px;
+        min-width: 280px;
         margin-right: 0;
     }
 
     .contenedor1 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        align-items: start;
+        align-items: stretch;
         gap: 20px;
         width: 100%;
         border-left: none;
@@ -351,13 +348,22 @@ a {
         margin-top: 10px;
     }
 
-    .contenedor1 div {
-        margin-right: 0;
-    }
-
     .content-ton {
         margin-left: 0;
         width: 100%;
+        position: relative;
+    }
+
+    .content-ton .text {
+        margin-bottom: 10px;
+    }
+
+    .content-ton br {
+        display: none;
+    }
+
+    .content-content {
+        margin-top: 44px;
     }
 
     .content-content,
@@ -366,17 +372,35 @@ a {
     #contenti {
         width: 100%;
         height: auto;
+        min-height: 260px;
         font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .content-content img,
+    .contenti img,
+    .contenti1 img,
+    #contenti img {
+        margin: 0 auto 12px auto !important;
+        width: 90px !important;
+        height: 90px !important;
+        object-fit: contain;
     }
 }
 
-@media (max-width: 1200px) {
-
+/* =========================
+   TABLETS (768px - 1050px)
+========================= */
+@media (max-width: 1050px) {
     .navbar {
         flex-wrap: wrap;
         justify-content: center;
-        padding: 10px 4%;
-        gap: 10px;
+        padding: 15px 4%;
+        gap: 12px;
     }
 
     .logo img {
@@ -386,12 +410,16 @@ a {
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 6px;
+        gap: 8px;
     }
 
     .nav-links a {
         font-size: 14px;
         padding: 10px 12px;
+    }
+
+    .nav-links a.btn-cerrar-sesion {
+        margin-left: 0;
     }
 
     .Metas-objetivos-content {
@@ -417,14 +445,15 @@ a {
     }
 
     .contenedor {
-        padding: 20px;
+        padding: 25px 20px;
     }
 
     .content {
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 20px;
-        padding: 20px;
+        padding: 25px 20px;
         width: 100%;
     }
 
@@ -432,24 +461,39 @@ a {
     #content-contentt {
         width: 100%;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
+    /* Cuadrícula 2x2 perfectamente alineada para las 4 metas en tablet */
     .contenedor1 {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
         gap: 20px;
         width: 100%;
         border-left: none;
-        padding-left: 0;
-    }
-
-    .contenedor1 div {
-        margin-right: 0;
+        border-top: 3px solid #FFC928;
+        padding-top: 55px;
+        position: relative;
     }
 
     .content-ton {
         margin-left: 0;
         width: 100%;
+        height: 100%;
+    }
+
+    /* Saca el título "Nuestras metas:" arriba de la cuadrícula para que Meta 1 y Meta 2 queden exactamente a la misma altura */
+    .content-ton .text {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 24px;
     }
 
     .content-content,
@@ -457,19 +501,36 @@ a {
     .contenti1,
     #contenti {
         width: 100%;
-        height: auto;
-        margin-top: 0;
-        padding: 18px;
+        height: 100%;
+        min-height: 230px;
+        margin-top: 0 !important;
+        padding: 20px;
         font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .content-content img,
+    .contenti img,
+    .contenti1 img,
+    #contenti img {
+        margin: 0 auto 14px auto !important;
+        width: 85px !important;
+        height: 85px !important;
+        object-fit: contain;
     }
 
     .contenido2 {
-        margin: 0 15px;
+        margin: 0 20px;
     }
 
     .contenido2-content {
         margin-left: 0;
         padding: 30px 22px;
+        text-align: center;
     }
 
     .footer {
@@ -478,8 +539,10 @@ a {
     }
 }
 
+/* =========================
+   CELULARES
+========================= */
 @media (max-width: 600px) {
-
     .logo img {
         height: 50px;
     }
@@ -513,10 +576,6 @@ a {
         padding: 15px;
     }
 
-    .content img {
-        max-width: 100%;
-    }
-
     .content-contentt h1 {
         font-size: 26px;
     }
@@ -527,6 +586,7 @@ a {
 
     .contenedor1 {
         grid-template-columns: 1fr;
+        padding-top: 50px;
     }
 
     .text {
@@ -538,7 +598,8 @@ a {
     .contenti1,
     #contenti {
         font-size: 17px;
-        padding: 15px;
+        padding: 18px;
+        min-height: 200px;
     }
 
     .contenido2 {
