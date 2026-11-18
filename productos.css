@@ -466,6 +466,7 @@ a {
     display: flex;
     align-items: center;
     gap: 15px;
+    background-color: #041E38;
 }
 
 .footer-social a {
