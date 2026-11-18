@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro e Inicio de Sesión</title>
+    <title>SolTech | Registro e Inicio de Sesión</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
@@ -15,7 +15,7 @@
             <div class="Caja">
                 <div class="Caja2">
                     <div class="Caja2_div1">
-                        <img src="img/Logo-Solari.png" alt="Logo del colegio" width="300" height="250">
+                        <img src="img/Logo-Solari.png" alt="Logo SolTech">
                     </div>
 
                     <div class="Caja2_div2">
@@ -51,41 +51,39 @@
         </div>
 
         <!-- SECCIÓN INICIO DE SESIÓN -->
-        <div class="caja_principal1">
-            <div id="div2" class="oculto">
-                <div class="caja1">
-                    <div class="Caja2">
-                        <div class="Caja2_div1">
-                            <img src="img/Logo-Solari.png" alt="Logo del colegio" width="300" height="250">
+        <div id="div2" class="oculto">
+            <div class="Caja">
+                <div class="Caja2">
+                    <div class="Caja2_div1">
+                        <img src="img/Logo-Solari.png" alt="Logo SolTech">
+                    </div>
+
+                    <div class="Caja2_div2">
+                        <p>Iniciar Sesión</p>
+                    </div>
+
+                    <div class="Caja2_div3">
+                        <div class="campo">
+                            <label for="usuario1">Usuario:</label>
+                            <div class="caja_1">
+                                <input type="text" id="usuario1" name="usuario1" placeholder="Ingresa tu usuario">
+                            </div>
                         </div>
 
-                        <div class="Caja2_div2">
-                            <p>Iniciar Sesión</p>
+                        <div class="campo">
+                            <label for="password1">Contraseña:</label>
+                            <div class="caja_1">
+                                <input type="password" id="password1" name="password1" placeholder="Ingresa tu contraseña">
+                            </div>
                         </div>
 
-                        <div class="Caja2_div3">
-                            <div class="campo">
-                                <label for="usuario1">Usuario:</label>
-                                <div class="caja_1">
-                                    <input type="text" id="usuario1" name="usuario1" placeholder="Ingresa tu usuario">
-                                </div>
-                            </div>
+                        <div class="Caja2_div4">
+                            <button type="button" class="boton" onclick="Inicio1()">Iniciar Sesión</button>
+                        </div>
 
-                            <div class="campo">
-                                <label for="password1">Contraseña:</label>
-                                <div class="caja_1">
-                                    <input type="password" id="password1" name="password1" placeholder="Ingresa tu contraseña">
-                                </div>
-                            </div>
-
-                            <div class="Caja2_div4">
-                                <button type="button" class="boton" onclick="Inicio1()">Iniciar Sesión</button>
-                            </div>
-
-                            <div class="Caja2_div5">
-                                <p>¿No tienes una cuenta?</p>
-                                <button type="button" class="boton boton-secundario" onclick="mostrar('div1')">Regístrate</button>
-                            </div>
+                        <div class="Caja2_div5">
+                            <p>¿No tienes una cuenta?</p>
+                            <button type="button" class="boton boton-secundario" onclick="mostrar('div1')">Regístrate</button>
                         </div>
                     </div>
                 </div>

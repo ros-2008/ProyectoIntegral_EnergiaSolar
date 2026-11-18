@@ -4,60 +4,75 @@
     box-sizing: border-box;
 }
 
+/* Ocultar elementos */
 .oculto {
     display: none !important;
 }
 
-.caja_principal,
-.caja_principal1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+/* Mostrar elementos como Flex centrado */
+.visible {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
 }
 
-.caja1,
+/* Contenedor principal de los formularios */
+.caja_principal {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    min-height: 100vh;
+}
+
 .Caja {
-    margin: 0 !important;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
 }
 
 .caja_1 {
-    width: 100%;
+    width: 100% !important;
     display: flex;
     justify-content: center;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     min-height: 100vh;
     background: linear-gradient(to right, #003f88, #FFFFFF);
     font-family: Arial, sans-serif;
-    padding: 20px; /* Evita que el formulario pegue contra los bordes en celulares */
+    margin: 0 !important;
+    padding: 15px;
 }
 
+/* LA CAJA DE AMBOS FORMULARIOS (ANCHO UNIFICADO Y DELGADO) */
 .Caja2 {
-    width: 100%;
-    max-width: 450px; /* Ancho ideal en PC, se adapta fluidamente en móviles */
+    width: 100% !important;
+    max-width: 380px !important;
     background-color: #041b3e;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    padding: 30px;
-    margin: 0 auto;
+    padding: 25px 20px;
+    margin: 0 auto !important;
 }
 
 .Caja2_div1 {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
+/* Control estricto de la imagen para que no ensanche el registro */
 .Caja2_div1 img {
-    max-width: 100%;
-    height: auto;
+    width: 100% !important;
+    max-width: 130px !important;
+    height: auto !important;
+    margin: 0 auto;
+    display: block;
 }
 
 .Caja2_div2 {
@@ -65,7 +80,7 @@ body {
     background-color: #000000;
     padding: 10px;
     color: #e0cb0d;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: bold;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -74,7 +89,7 @@ body {
 .Caja2_div3 {
     background-color: #000000;
     color: #e0cb0d;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -93,16 +108,16 @@ body {
 }
 
 .Caja2_div3 input {
-    width: 100%;
-    padding: 12px;
+    width: 100% !important;
+    padding: 10px;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    font-size: 16px; /* 16px previene zoom automático molesto en iPhone/Android */
+    font-size: 16px;
 }
 
-/* BOTÓN PRINCIPAL (Regístrate / Iniciar Sesión) */
+/* BOTÓN PRINCIPAL */
 .Caja2_div4 {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -110,13 +125,12 @@ body {
     background-color: #003f88;
     border: 2px solid #e0cb0d;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     width: 100%;
-    padding: 12px;
+    padding: 11px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .Caja2_div4 button:hover {
@@ -126,7 +140,7 @@ body {
 
 /* SECCIÓN CAMBIO DE FORMULARIO */
 .Caja2_div5 {
-    margin-top: 18px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,87 +157,14 @@ body {
     background-color: transparent;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
-    padding: 8px 20px;
+    padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .Caja2_div5 button:hover {
     background-color: #FFFFFF;
     color: #041b3e;
-}
-
-/* ==========================================================
-   RESPONSIVE PARA TABLETS Y MÓVILES (Ajustes de escala)
-========================================================== */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .Caja2 {
-        padding: 20px 15px;
-    }
-
-    .Caja2_div2 {
-        font-size: 19px;
-    }
-
-    .Caja2_div3 {
-        padding: 15px;
-    }
-}
-
-/* ==========================================================
-   RESPONSIVE PANTALLAS GRANDES
-========================================================== */
-@media (min-width: 2000px) {
-    .Caja2 {
-        max-width: 722px;
-        padding: 60px 40px;
-    }
-
-    .Caja2_div1 {
-        margin-bottom: 30px;
-    }
-
-    .Caja2_div1 img {
-        max-width: 400px;
-    }
-
-    .Caja2_div2 {
-        font-size: 28px;
-        padding: 18px;
-        margin-bottom: 25px;
-    }
-
-    .Caja2_div3 {
-        padding: 30px 20px;
-        margin-bottom: 25px;
-    }
-
-    .Caja2_div3 .campo {
-        margin-bottom: 20px;
-    }
-
-    .Caja2_div3 input {
-        padding: 18px;
-        font-size: 25px;
-    }
-
-    .Caja2_div4 button {
-        font-size: 32px;
-        padding: 18px;
-    }
-
-    .Caja2_div5 p {
-        font-size: 22px;
-    }
-
-    .Caja2_div5 button {
-        font-size: 25px;
-    }
 }
