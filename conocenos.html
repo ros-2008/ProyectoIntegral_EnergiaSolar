@@ -10,7 +10,7 @@
 
 <body>
 
-    <!-- NAVEGACIÓN -->
+    <!-- NAVEGACIÓN UNIFICADA -->
     <nav class="navbar">
 
         <a class="logo" href="inicio.html">
@@ -89,7 +89,6 @@
                         Buscamos constantemente nuevas ideas y tecnologías
                         para mejorar nuestros productos y servicios.
                     </p>
-                    <br>
                     <p>
                         Desarrollamos soluciones innovadoras que impulsen la transición hacia un futuro más sostenible.
                     </p>
@@ -103,7 +102,6 @@
                         Estamos comprometidos con la sostenibilidad
                         y el medio ambiente.
                     </p>
-                    <br>
                     <p>
                         Nos esforzamos por ofrecer un servicio excepcional
                         y cumplir con las expectativas de nuestros clientes.
@@ -117,7 +115,8 @@
                     <p>
                         Estamos dedicados a ofrecer productos y servicios
                         de la más alta calidad.
-                        <br><br>
+                    </p>
+                    <p>
                         Nos aseguramos de que cada instalación cumpla con los estándares más exigentes,
                         garantizando la satisfacción de nuestros clientes.
                     </p>
@@ -129,7 +128,6 @@
                     <h3>Responsabilidad</h3>
                     <p>
                         Asumimos la responsabilidad de nuestras acciones y decisiones,
-                        <br><br>
                         buscando siempre el beneficio de nuestros clientes
                         y del medio ambiente.
                     </p>
@@ -142,7 +140,8 @@
                     <p>
                         Fomentamos la colaboración y el trabajo en equipo
                         para alcanzar nuestros objetivos.
-                        <br><br>
+                    </p>
+                    <p>
                         Creemos que la diversidad de ideas y habilidades fortalece nuestro desempeño y nos permite ofrecer soluciones.
                     </p>
                     <img src="img/trabajo.png" alt="Trabajo en equipo" width="200" height="170">
@@ -154,24 +153,16 @@
 
     </main>
 
-<script>
+    <script>
         window.difyChatbotConfig = {
             token: 'cLyvxLPdxic33GrJ',
             baseUrl: 'https://udify.app',
-            inputs: {
-                // You can define the inputs from the Start node here
-                // key is the variable name
-                // e.g.
-                // name: "NAME"
-            },
-            systemVariables: {
-                // user_id: 'YOU CAN DEFINE USER ID HERE',
-                // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
-            },
+            inputs: {},
+            systemVariables: {},
             userVariables: {
                 user_id: 'padre_' + Math.random().toString(36).substring(2, 9)
             },
-        }
+        };
     </script>
     <script src="https://udify.app/embed.min.js" id="cLyvxLPdxic33GrJ" defer>
     </script>
@@ -186,9 +177,24 @@
         }
     </style>
 
-    <!-- PIE DE PÁGINA -->
+    <!-- PIE DE PÁGINA UNIFICADO -->
     <footer class="footer">
+
+        <a href="inicio.html" class="footer-logo">
+            <img src="img/Logo-Solari-fondo.png" alt="Logo SolTech">
+        </a>
+
+        <div class="footer-text">
+            <a href="inicio.html">Inicio</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="metas-objetivos.html">Metas y Objetivos</a>
+            <a href="productos.html">Productos</a>
+            <a href="estrategias.html">Estrategias</a>
+            <a href="contactanos.html">Contáctanos</a>
+        </div>
+
         <p>© 2026 SolTech | Energía solar para un futuro sostenible.</p>
+
     </footer>
 
 </body>

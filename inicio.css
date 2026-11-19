@@ -48,6 +48,12 @@ a {
     z-index: 10;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .logo img {
     height: 75px;
     width: auto;
@@ -57,15 +63,17 @@ a {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .nav-links a {
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
-    padding: 12px 18px;
+    padding: 12px 16px;
     border-radius: 6px;
+    white-space: nowrap;
     transition: all 0.3s ease;
 }
 
@@ -79,7 +87,7 @@ a {
     background-color: #d9534f;
     color: #ffffff;
     border: 1px solid #d9534f;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 .nav-links a.btn-cerrar-sesion:hover {
@@ -182,6 +190,8 @@ a {
     margin-top: 10px;
     border-radius: 30px;
     font-weight: bold;
+    text-align: center;
+    cursor: pointer;
     border: 2px solid #FFC928;
     transition: all 0.3s ease;
 }
@@ -482,9 +492,18 @@ a {
     padding: 30px 6%;
 }
 
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
 .footer-logo img {
     width: 120px;
+    max-width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 .footer-text {
@@ -540,6 +559,7 @@ a {
     .nav-links a {
         font-size: 14px;
         padding: 10px 12px;
+        white-space: normal;
     }
 
     .nav-links a.btn-cerrar-sesion {
@@ -590,6 +610,7 @@ a {
     .nav-links a {
         font-size: 13px;
         padding: 9px 10px;
+        white-space: normal;
     }
 
     .contenido {

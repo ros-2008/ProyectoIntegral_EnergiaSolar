@@ -1,5 +1,4 @@
-
-/* COLORES (sin cambios) */
+/* COLORES */
 :root {
     --azul: #0B1F3A;
     --amarillo: #FFC928;
@@ -25,7 +24,7 @@ body {
     line-height: 1.7;
 }
 
-/* NAVEGACION (sin cambios) */
+/* NAVEGACION */
 .navbar {
     width: 100%;
     min-height: 90px;
@@ -171,19 +170,20 @@ body {
     padding: 60px 25px 80px;
 }
 
-/* EXPANSION Y VISION */
+/* CUADRÍCULA DE ESTRATEGIAS (4 TARJETAS) */
 .presentacion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-top: -20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .bloque {
     position: relative;
     background: var(--azul);
     color: var(--blanco);
-    padding: 45px 40px 40px;
+    padding: 40px 35px 35px;
     border-radius: 18px;
     box-shadow: var(--sombra);
     overflow: hidden;
@@ -208,17 +208,17 @@ body {
 
 .bloque h2 {
     color: var(--amarillo);
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 26px;
+    margin-bottom: 14px;
 }
 
 .bloque p {
     color: var(--blanco);
-    font-size: 17px;
-    max-width: 90%;
+    font-size: 16px;
+    max-width: 92%;
 }
 
-/* Segundo bloque en amarillo */
+/* Tarjetas alternas en amarillo */
 .bloque-claro {
     background: var(--amarillo);
 }
@@ -233,14 +233,14 @@ body {
     opacity: 0.15;
 }
 
-/* VALORES */
+/* SECCIONES / PLAN POR PASOS */
 .seccion-valores {
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .titulo-valores {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .titulo-valores h2 {
@@ -377,8 +377,18 @@ body {
     background: var(--azul);
     color: var(--blanco);
     text-align: center;
-    padding: 22px;
+    padding: 25px 20px;
     border-top: 4px solid var(--amarillo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    height: 55px;
+    width: auto;
+    display: block;
 }
 
 /* RESPONSIVE */
@@ -457,7 +467,7 @@ body {
     }
 
     .bloque {
-        padding: 35px 25px 30px;
+        padding: 32px 24px 28px;
     }
 
     .valores-container::before {

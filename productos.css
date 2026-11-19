@@ -1,3 +1,4 @@
+/* CONFIGURACIÓN GENERAL */
 
 * {
     box-sizing: border-box;
@@ -28,85 +29,102 @@ a {
 }
 
 
-/* NAVEGACIÓN */
+/* NAVEGACIÓN UNIFICADA */
 
 .navbar {
     width: 100%;
-    min-height: 75px;
-    padding: 8px 5%;
-    background-color: #041E38;
+    min-height: 90px;
+    padding: 10px 6%;
+    background-color: #0b1f3a;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
     position: relative;
     z-index: 10;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .logo img {
-    width: 190px;
-    height: 55px;
+    height: 75px;
+    width: auto;
     object-fit: contain;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .nav-links a {
-    color: white;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 16px;
     font-weight: 600;
-    padding: 12px 13px;
-    transition: 0.3s;
-    border-bottom: 2px solid transparent;
+    padding: 12px 16px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.activo {
-    color: #FFC928;
-    border-bottom: 2px solid #FFC928;
-}
-
-.nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.nav-quote {
-    background-color: #FFC928;
     color: #0B1F3A;
-    padding: 12px 20px;
-    border-radius: 30px;
-    font-size: 12px;
-    font-weight: bold;
-    transition: 0.3s;
-    white-space: nowrap;
+    background-color: #FFC928;
 }
 
-.nav-quote i {
-    margin-left: 5px;
+.nav-links a.btn-cerrar-sesion {
+    background-color: #d9534f;
+    color: #ffffff;
+    border: 1px solid #d9534f;
+    margin-left: 8px;
 }
 
-.nav-quote:hover {
-    background-color: white;
-    transform: translateY(-2px);
+.nav-links a.btn-cerrar-sesion:hover {
+    background-color: #b52b27;
+    border-color: #b52b27;
+    color: #ffffff;
 }
+
+
+/* BOTÓN FLOTANTE DEL CARRITO */
 
 .cart-button {
-    position: relative;
     border: none;
     background: transparent;
     color: white;
     font-size: 14px;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
-.cart-button i {
-    margin-right: 5px;
+.cart-floating {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 19;
+    background-color: #0B1F3A;
+    color: #ffffff;
+    border: 2px solid #FFC928;
+    border-radius: 30px;
+    padding: 11px 18px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(11, 31, 58, 0.25);
+    transition: all 0.3s ease;
+}
+
+.cart-floating:hover {
+    background-color: #FFC928;
+    color: #0B1F3A;
+    transform: translateY(-2px);
 }
 
 .cart-count {
@@ -116,8 +134,8 @@ a {
     background-color: #FFC928;
     color: #0B1F3A;
     font-weight: bold;
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     font-size: 11px;
 }
@@ -426,22 +444,30 @@ a {
 }
 
 
-/* FOOTER */
+/* FOOTER UNIFICADO */
 
 .footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    background-color: #04172D;
-    padding: 20px 5%;
-    border-top: 1px solid rgba(255,255,255,0.15);
+    gap: 25px;
+    background-color: #111111;
+    padding: 30px 6%;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .footer-logo img {
-    width: 190px;
+    width: 120px;
+    max-width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 .footer-text {
@@ -449,12 +475,12 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .footer-text a {
-    color: white;
-    font-size: 12px;
+    color: #DAD7CD;
+    font-size: 15px;
     transition: color 0.3s ease;
 }
 
@@ -466,12 +492,11 @@ a {
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #041E38;
 }
 
 .footer-social a {
     color: #FFC928;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
@@ -482,7 +507,9 @@ a {
 
 .footer p {
     color: #DAD7CD;
-    font-size: 10px;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -626,26 +653,30 @@ a {
 @media (max-width: 1000px) {
 
     .navbar {
-        padding: 10px 3%;
-        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 15px 4%;
+        gap: 15px;
     }
 
     .logo img {
-        width: 150px;
+        height: 68px;
+        width: auto;
     }
 
     .nav-links {
-        gap: 3px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
     }
 
     .nav-links a {
-        font-size: 12px;
-        padding: 10px 7px;
+        font-size: 14px;
+        padding: 10px 12px;
+        white-space: normal;
     }
 
-    .nav-quote {
-        padding: 10px 12px;
-        font-size: 11px;
+    .nav-links a.btn-cerrar-sesion {
+        margin-left: 0;
     }
 
     .principal {
@@ -660,6 +691,10 @@ a {
         font-size: 34px;
     }
 
+    .footer {
+        justify-content: center;
+    }
+
 }
 
 
@@ -668,27 +703,35 @@ a {
 @media (max-width: 650px) {
 
     .navbar {
+        flex-direction: column;
         justify-content: center;
         gap: 10px;
+        padding: 15px;
     }
 
     .logo img {
-        width: 160px;
+        height: 60px;
+        width: auto;
     }
 
     .nav-links {
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
+        gap: 5px;
     }
 
     .nav-links a {
-        font-size: 11px;
-        padding: 8px;
+        font-size: 13px;
+        padding: 9px 10px;
+        white-space: normal;
     }
 
-    .nav-actions {
-        justify-content: center;
+    .cart-floating {
+        bottom: 16px;
+        left: 16px;
+        padding: 9px 14px;
+        font-size: 13px;
     }
 
     .hero-productos {
@@ -772,16 +815,17 @@ a {
     }
 
     .footer {
-        justify-content: center;
+        flex-direction: column;
         text-align: center;
     }
 
     .footer-text {
+        flex-direction: column;
         gap: 15px;
     }
 
     .footer-text a {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .footer p {

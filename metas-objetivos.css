@@ -39,6 +39,12 @@ a {
     z-index: 10;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .logo img {
     height: 75px;
     width: auto;
@@ -48,6 +54,7 @@ a {
 .nav-links {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -233,9 +240,18 @@ a {
     padding: 30px 6%;
 }
 
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
 .footer-logo img {
     width: 120px;
+    max-width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 .footer-text {
@@ -277,6 +293,8 @@ a {
     margin-top: 15px;
     border-radius: 30px;
     font-weight: bold;
+    text-align: center;
+    cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
 }
@@ -466,7 +484,6 @@ a {
         align-items: center;
     }
 
-    /* Cuadrícula 2x2 perfectamente alineada para las 4 metas en tablet */
     .contenedor1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -485,7 +502,6 @@ a {
         height: 100%;
     }
 
-    /* Saca el título "Nuestras metas:" arriba de la cuadrícula para que Meta 1 y Meta 2 queden exactamente a la misma altura */
     .content-ton .text {
         position: absolute;
         top: 12px;

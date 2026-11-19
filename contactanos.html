@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolTech</title>
+    <title>SolTech | Contáctanos</title>
     <link rel="stylesheet" href="contactanos.css">
 </head>
 
 <body>
 
-    <nav class="caja1">
-        <a class="caja2" href="inicio.html">
+    <!-- NAVEGACIÓN UNIFICADA -->
+    <nav class="navbar">
+        <a class="logo" href="inicio.html">
             <img src="img/Logo-Solari.png" alt="Logo SolTech">
         </a>
 
-        <div class="caja3">
+        <div class="nav-links">
             <a href="inicio.html">Inicio</a>
             <a href="conocenos.html">Conócenos</a>
             <a href="metas-objetivos.html">Metas y Objetivos</a>
             <a href="productos.html">Productos</a>
             <a href="estrategias.html">Estrategias</a>
             <a href="contactanos.html" class="activo">Contáctanos</a>
+            <a href="index.html" class="btn-cerrar-sesion">Cerrar Sesión</a>
         </div>
     </nav>
 
@@ -77,12 +79,12 @@
             <h2>Envíanos un mensaje</h2>
             <p>Completa el formulario y te responderemos lo antes posible.</p>
 
-            <form>
+            <form id="form-contacto">
                 <div class="caja12">
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="email" placeholder="Correo electrónico">
+                    <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    <input type="email" id="correo" placeholder="Correo electrónico" required>
                 </div>
-                <textarea placeholder="Mensaje" rows="3"></textarea>
+                <textarea id="mensaje" placeholder="Mensaje" rows="3" required></textarea>
                 <button type="submit" class="boton">Enviar mensaje →</button>
             </form>
         </div>
@@ -99,7 +101,7 @@
                 <img src="img/instagram.svg" alt="Instagram">
                 <h3>Instagram</h3>
                 <p>Fotos, historias y novedades de nuestros proyectos.</p>
-                <a href="https://www.instagram.com/solte.chgt" class="boton">@solte.chgt →</a>
+                <a href="https://www.instagram.com/solte.chgt" target="_blank" rel="noopener noreferrer" class="boton">@solte.chgt →</a>
             </div>
         </div>
 
@@ -111,31 +113,49 @@
                 allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
 
-        <p class="caja18">📍 Visitamos en <strong>Plaza San Ángel Zona 1</strong></p>
+        <p class="caja18">📍 Visítanos en <strong>Plaza San Ángel Zona 1</strong></p>
 
     </section>
+
+    <!-- PIE DE PÁGINA UNIFICADO -->
     <footer class="footer">
+
+        <a href="inicio.html" class="footer-logo">
+            <img src="img/Logo-Solari-fondo.png" alt="Logo SolTech">
+        </a>
+
+        <div class="footer-text">
+            <a href="inicio.html">Inicio</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="metas-objetivos.html">Metas y Objetivos</a>
+            <a href="productos.html">Productos</a>
+            <a href="estrategias.html">Estrategias</a>
+            <a href="contactanos.html">Contáctanos</a>
+        </div>
+
         <p>© 2026 SolTech | Energía solar para un futuro sostenible.</p>
+
     </footer>
 
-<script>
+    <script>
+        document.getElementById("form-contacto").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const nombre = document.getElementById("nombre").value.trim();
+            alert("¡Gracias, " + nombre + "! Tu mensaje fue enviado a SolTech.");
+            this.reset();
+        });
+    </script>
+
+    <script>
         window.difyChatbotConfig = {
             token: 'cLyvxLPdxic33GrJ',
             baseUrl: 'https://udify.app',
-            inputs: {
-                // You can define the inputs from the Start node here
-                // key is the variable name
-                // e.g.
-                // name: "NAME"
-            },
-            systemVariables: {
-                // user_id: 'YOU CAN DEFINE USER ID HERE',
-                // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
-            },
+            inputs: {},
+            systemVariables: {},
             userVariables: {
                 user_id: 'padre_' + Math.random().toString(36).substring(2, 9)
             },
-        }
+        };
     </script>
     <script src="https://udify.app/embed.min.js" id="cLyvxLPdxic33GrJ" defer>
     </script>
